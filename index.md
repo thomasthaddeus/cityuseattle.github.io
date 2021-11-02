@@ -6,18 +6,16 @@ description: "CityU STC TA Center"
 permalink: /
 ---
 
-# A new way to solve your problems.
+# CityU STC TA Center
 {: .fs-9 }
 
+### Get Started
 
-## Getting started
+Welcome to CityU STC TA Center. We're here for sharing technical knowledge and solving your problems quickly. In addition, we want you learn something from here as well. 
 
-### Contributing
+Pages on this site runs on Github.io nad is open to anyone not only CityU TAS. If you want to contribute or find something wrong, Please read more about becoming a contributor in [our GitHub repo](https://github.com/cityuseattle/cityuseattle.github.io#contributing).
 
-When contributing to this repository, please first discuss the change you wish to make via issue,
-email, or any other method with the owners of this repository before making a change. Read more about becoming a contributor in [our GitHub repo](https://github.com/pmarsceill/just-the-docs#contributing).
-
-#### Thank you to the contributors of Just the Docs!
+#### Thank you for your time!
 
 <ul class="list-style-none">
 {% for contributor in site.github.contributors %}
