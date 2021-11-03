@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Buttons
-parent: UI Components
+title: Install Git Command and GitHub Desktop
+parent: github
 nav_order: 2
 ---
 
