@@ -33,8 +33,7 @@ We have 10 weeks every quarter. For doing homework, we will always download file
 
 For example, we will create a folder for every course by course number. Every quarter has 10 weeks, so we create 10 folders follow the "ModuleXX" formatation.
 
-![](http://f.xuwenzhi.com/cityu/hops_organized_sturcture.png)
-
+![HOP and HOS organized sturcture](/assets/images/hops_organized_sturcture.png)
 
 ## How to submit your work to GitHub?
 

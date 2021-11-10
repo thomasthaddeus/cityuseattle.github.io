@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Bash Tools
-parent: Useful Tools
+parent: Tools
 ---
 
 # Bash Tools
