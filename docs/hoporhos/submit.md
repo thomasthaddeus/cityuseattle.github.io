@@ -1,17 +1,12 @@
 ---
 layout: default
-title: HOP OR HOS
+title: How to submit your work?
+parent: HOP OR HOS
 nav_order: 3
 ---
 
-# HOP or HOS
+
 {: .no_toc }
-
-
-
-{: .fs-6 .fw-300 }
-
-
 
 ## Table of contents
 {: .no_toc .text-delta }
@@ -20,23 +15,6 @@ nav_order: 3
 {:toc}
 
 ---
-
-
-## A guide for doing HOP or HOS on GitHub.
-
-
-
-
-## How to organize your HOP/HOS repository for class?
-
-We have 10 weeks every quarter. For doing homework, we will always download files or clone repository from GitHub. A recommended file structure is below. We will create 10 weeks folder under the course.
-
-For example, we will create a folder for every course by course number. Every quarter has 10 weeks, so we create 10 folders follow the "ModuleXX" formatation.
-
-![HOP and HOS organized sturcture](/assets/images/hops_organized_sturcture.png)
-
-## How to submit your work to GitHub?
-
 
 There're 2 typical ways to submit your work to GitHub. 
 
@@ -57,7 +35,7 @@ git push origin main
 [main 93e1062] Submission for Module06 - Wenzhi Xu
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 .DS_Store
-❯ ggpush
+❯ git push origin master
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 8 threads
@@ -66,13 +44,16 @@ Writing objects: 100% (3/3), 591 bytes | 591.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:cityuseattle/IS440-HOP06-Fall-2021.git
-   91edf39..93e1062  main -> main
+   91edf39..93e1062  master -> master
 ```
-
-
 
 
 ### GitHub Desktop.
 
+After you finish your HOP or HOS, you can see all changes on GitHub Desktop. For example, if you finish your work on week6 and want to submit or push it to GitHub. You can type a summary and then commit it to master.
 
-... TODO
+![](/assets/images/github-desktop-commit.png)
+
+So far, you have committed changes to your local branch. The remote branch has not been changed. You need to push it to remote branch so that everyone can see your work, particularly your TA.
+
+![](/assets/images/github-desktop-push.png)
