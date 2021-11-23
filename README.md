@@ -2,9 +2,10 @@
 
 ## Installation
 
-You must install docker.
+You must install docker
 
 $ git clone git@github.com:cityuseattle/cityuseattle.github.io.git
+
 $ docker-compose up
 
 Open the [http://0.0.0.0:4000](http://0.0.0.0:4000) in your browser.
