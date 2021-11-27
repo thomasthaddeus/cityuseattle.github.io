@@ -13,7 +13,7 @@ permalink: /
 
 Welcome to CityU STC TA Center. We're here for sharing technical knowledge and solving your problems quickly. In addition, we want you learn something from here as well. 
 
-Pages on this site runs on Github.io nad is open to anyone not only CityU TAS. If you want to contribute or find something wrong, Please read more about becoming a contributor in [our GitHub repo](https://github.com/cityuseattle/cityuseattle.github.io#contributing).
+Pages on this site runs on Github.io is open to anyone not only CityU TAs. If you want to contribute or find something wrong, Please read more about becoming a contributor in [our GitHub repo](https://github.com/cityuseattle/cityuseattle.github.io#contributing).
 
 #### Thank you for your time!
 

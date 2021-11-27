@@ -54,7 +54,7 @@ In this part, you have 2 ways to clone GitHub repository to your local machine. 
 
 ![](/assets/images/hos-readme-clone-desktop.png)
 
-* Install GitHub Desktop (If you have not installed GitHub Desktop, please follow [Install GitHub Desktop](../tools/githubdesktop) to install it.)
+* Install GitHub Desktop (If you have not installed GitHub Desktop, please follow [Install GitHub Desktop]({{ site.baseurl }}{% link docs/tools/githubdesktop.md %}) to install it.)
 
 * After you install it, reclick "Open with GitHub Desktop". GitHub Deskotp will automaticlly pop up. Click "Choose" to select a correct local path to store it. Then click "Clone".
 
