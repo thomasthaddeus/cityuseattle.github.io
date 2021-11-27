@@ -2,7 +2,7 @@
 
 ## Installation
 
-You must install docker.
+You must install docker
 
 $ git clone git@github.com:cityuseattle/cityuseattle.github.io.git
 
