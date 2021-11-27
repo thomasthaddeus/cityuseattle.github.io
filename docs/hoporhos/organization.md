@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How to organize your HOP/HOS repository?
+title: Organize HOP/HOS
 parent: HOP OR HOS
 nav_order: 2
 ---

@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Create an Account on GitHub
+title: Create GitHub Account
 parent: Git
 ---
 

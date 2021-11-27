@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How to submit your work?
+title: Submit your work
 parent: HOP OR HOS
 nav_order: 3
 ---

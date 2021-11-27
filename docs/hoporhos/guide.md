@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How to do HOP or HOS on GitHub.
+title: How to do HOP or HOS?
 parent: HOP OR HOS
 nav_order: 2
 ---
