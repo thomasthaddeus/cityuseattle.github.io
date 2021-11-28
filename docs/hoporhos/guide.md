@@ -1,6 +1,6 @@
 ---
 layout: default
-title: How to do HOP or HOS?
+title: A guide for HOP or HOS
 parent: HOP OR HOS
 nav_order: 2
 ---
@@ -8,10 +8,7 @@ nav_order: 2
 
 {: .no_toc }
 
-## Table of contents
-{: .no_toc .text-delta }
 
-1. TOC
 {:toc}
 
 ---
@@ -27,7 +24,7 @@ There is a [recommend way](../organization/) to organize your 10 week's course c
 
 # Clone or Download
 
-In this part, you have 2 ways to clone GitHub repository to your local machine. The first one is Git Command Line and the other is GitHub Desktop. You can choose anyone you're comfortable with.
+In this part, you have 2 ways to clone GitHub repository to your local machine. The first one is `Git Command Line` and the other is `GitHub Desktop`. You can choose anyone you're comfortable with.
 
 **Notice: If you have no experience with Git or GitHub, the GitHub Desktop would be better choice.**
 

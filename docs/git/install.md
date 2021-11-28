@@ -28,7 +28,7 @@ nav_order: 2
 
 ### Section 1: Checking your version of Git
 
- 1. To see if you already have Git installed and check the installed version, type and run the following command in the terminal:
+ 1. Open a new Terminal, type and run the following command to see if you already have Git installed and check the installed version:
 
    ```shell
    $ git --version
