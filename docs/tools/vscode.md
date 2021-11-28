@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Install VS Code
+title: Install vs code
 parent: Tools
 ---
 

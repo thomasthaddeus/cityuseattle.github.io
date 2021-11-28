@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Install GitHub Desktop
-parent: Tools
+parent: Git
 ---
 
 # Install GitHub Desktop

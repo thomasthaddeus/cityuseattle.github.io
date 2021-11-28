@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Install Ubuntu
+title: Install ubuntu
 parent: Tools
 ---
 

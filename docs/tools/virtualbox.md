@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Install VirtualBox
+title: Install virtualbox
 parent: Tools
 ---
 

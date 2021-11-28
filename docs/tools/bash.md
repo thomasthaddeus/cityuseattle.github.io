@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Bash Tools
+title: Recommended bash tools
 parent: Tools
 ---
 
