@@ -26,6 +26,8 @@ If you're using Apple Silicon Valley([Check if you're using Apple Silicon Valley
 
 ### Download Multipass
 
+Go to the [Multipass download page](https://multipass.run) and download the latest version of Mutipass. When the page is written, the current released version is 1.8.1.
+
 ![](/assets/images/ubuntu/applem1_1.png)
 
 ### Install Multipass
