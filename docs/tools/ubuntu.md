@@ -20,10 +20,35 @@ Ubuntu is a complete Linux operating system, freely available with both communit
 # Install Ubuntu on MacOS (For Apple Silicon Valley)
 
 
-If you're using Apple Silicon Valley, there's no support for it. If you need help, contact your TA.
+If you're using Apple Silicon Valley([Check if you're using Apple Silicon Valley]({{ site.baseurl }}{% link docs/common/applem1.md %})
+), you need to install another tools like `multipass` to get Ubuntu on it. 
 
-[Check if you're using Apple Silicon Valley]({{ site.baseurl }}{% link docs/common/applem1.md %})
 
+### Download Multipass
+
+![](/assets/images/ubuntu/applem1_1.png)
+
+### Install Multipass
+
+![](/assets/images/ubuntu/applem1_2.png)
+
+### Start and Launch a Ubuntu Instance
+
+After you install multipass, you will get multipass command in your machine. Execute `multipass launch` command to start and launch a new Ubuntu instance.
+
+![](/assets/images/ubuntu/applem1_3.png)
+
+### Enter your Ubuntu instance
+
+After launching a new Ubuntu instance, you can execute `multipass shell {Your Instance Name}` to enter Ubuntu.
+
+
+![](/assets/images/ubuntu/applem1_4.png)
+
+
+### More Multipass Commands
+
+[Multipass Home Page](https://multipass.run)
 
 ---
 
