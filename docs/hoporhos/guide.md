@@ -33,7 +33,7 @@ In this part, you have 2 ways to clone GitHub repository to your local machine. 
 
 In your local machine, open Terminal (for Mac) or Command Prompt (CMD for Windows), type the following commands clone(download the repository to your local machine)
 
-**Don't have Git command?** Please follow [Install GitHub Desktop]({{ site.baseurl }}{% link docs/git/install.md %}) to install it
+**Don't have Git command?** Please follow [Install Git Command]({{ site.baseurl }}{% link docs/git/install.md %}) to install it
 
 * `cd {Your course path}/624/Module01` (Assume you're doing 1st week's HOP or HOS. cd Module02 if you're doing 2nd week's HOP or HOS)
 
