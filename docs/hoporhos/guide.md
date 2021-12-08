@@ -13,6 +13,8 @@ nav_order: 2
 
 ---
 
+# A guide for HOP or HOS
+
 
 This guide is for any courses' HOP (for undergraduates) or HOS (for graduates) that's on GitHub. The unique difference is the course number. I'll use 624 as the example to show you how to do your HOP or HOS (Please remember to use your correct course number instead of 624)
 
