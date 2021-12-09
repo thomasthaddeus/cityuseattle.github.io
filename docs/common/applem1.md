@@ -13,7 +13,7 @@ To check if you're using Apple M1? Follow the instructions below.
 
 - Click "About this Mac"
 
-![](/assets/images/about-this-mac.png)
+![](/assets/images/apple/applem1.png)
 
 
 If the Chip is "Apple M1", that means you're using Apple Silicon Valley. 
