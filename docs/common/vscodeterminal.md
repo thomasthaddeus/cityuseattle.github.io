@@ -6,7 +6,7 @@ parent: Common Solutions
 
 # Don't know what's Terminal?
 
-See [What's the Terminal?]({{ site.baseurl }}{% link docs/common/terminalandcmd.md %}).
+See [What's the Terminal?]({{ site.baseurl }}{% link docs/common/terminalandcmd.md %})
 
 # Open a new Termial in VS Code
 
