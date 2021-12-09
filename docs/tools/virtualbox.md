@@ -37,7 +37,38 @@ parent: Tools
 # Install VirtualBox on Windows
 
 
-todo
+1. Open the [VirtualBox download page](https://www.virtualbox.org/wiki/Downloads), choose the latest version and click "Windows hosts"
+
+![virtualbox_download_page](/assets/images/virtualbox/virtualbox_windows_homepage.png)
+
+2. Once you get the downloaded install package, click that and you will see the image below. Click that VirtualBox-xxxxx-Win.exe. In the next several steps, you would see some questions during the installation process. 
+
+![virtualbox_installing](/assets/images/virtualbox/virtualbox_windows_install.png)
+
+
+Click "Next".
+
+![virtualbox_installing](/assets/images/virtualbox/virtualbox_windows_install_1.png)
+
+Click "Next".
+
+![virtualbox_installing](/assets/images/virtualbox/virtualbox_windows_install_2.png)
+
+Click "Yes".
+![virtualbox_installing](/assets/images/virtualbox/virtualbox_windows_install_3.png)
+
+Click "Install". After that, it may take for a while, please be patient. During the install process, it will ask for your permission. Click "Allow" or "Yes" to complete the installation.
+
+![virtualbox_installing](/assets/images/virtualbox/virtualbox_windows_install_4.png)
+
+Click "Finish".
+![virtualbox_installing](/assets/images/virtualbox/virtualbox_windows_install_5.png)
+
+
+
+3. Open the installed VirtualBox, if you can see the image below. Congrats! Install successfully!
+
+![virtualbox_installing](/assets/images/virtualbox/virtualbox_windows_home.png)
 
 # Next
 
