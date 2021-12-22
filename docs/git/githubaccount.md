@@ -17,18 +17,18 @@ parent: Git
 
 ## Learning Outcomes
 
-* Understand the concept of version control system (VCS)
-* Create GitHub account
-* Clone GitHub repository to local from GitHub
-* Use Git, GitHub
+* Understand the concept of version control systems (VCS)
+* Create a GitHub account
+* Clone a GitHub repository to your local machine from GitHub
+* Use Git and GitHub
 
 ## Pre-knowledge
 
-Version control system (VCS) is created to makes it easy to store different versions of the project you are working at any time (without any fixed rules, time or rules). You can easily restore an earlier record and compare the content with the current data to find the differences. In addition, it also an effective tool to cooperate with many other people in the same project. In this module, we will learn about one of the most popular VCS which is Git and GitHub.
+Version control systems (VCS) were created to make it easy to store different versions of the project you are working at any time (without any fixed rules or time). You can easily restore an earlier record and compare the content with the current data to find the differences. In addition, VCS are also an effective tool to cooperate with many other people in the same project. In this section, we will learn about one of the most popular VCS which is Git and GitHub.
 
-First of all, Git and GitHub are not the same thing. Git is a VCS while GitHub is a hosting server for software development version control. The way Git works is that it creates a **repository** to store each version of the project every time developers modify or add some features into the project. Developers use Git through terminal or command line.
+First of all, Git and GitHub are not the same thing. Git is a VCS while GitHub is a hosting server used for software development version control. The way Git works is that it creates a **repository** to store each version of a project every time developers modify or add some features into the project. Developers can use Git through the terminal or command line.
 
-However, Git only allows you to control your project version on your local machine. Therefore, if there are 2 or more people working on a same project, how do we connect the works of all the members? That is why we need a hosting server GitHub.
+However, Git only allows you to control your project version on your local machine. Therefore, if there are 2 or more people working on the same project, how can we connect the works of all the members? That is why we need a hosting server such as GitHub.
 
 To learn more about Git and GitHub visit:
 
@@ -42,7 +42,7 @@ To learn more about Git and GitHub visit:
 
     ![](/assets/images/git/github_homepage.png)
 
- 2. Filling in the form with Email Address, Password and your special username. It is very straightforward.
+ 2. Fill in the form with your Email Address, Password and your special username. It is very straightforward.
 
     ![](/assets/images/git/registration_process.png)
 
@@ -52,5 +52,5 @@ To learn more about Git and GitHub visit:
 
  4. At this point you have created your GitHub account.
 
- 5. Please email your username to your TA
+ 5. Please email your username to your TA if requested.
     ![](/assets/images/git/account_dropdown_box.png)

@@ -15,29 +15,29 @@ parent: Tools
 
 ---
 
-# What's the VS Code
+# What is VS Code?
 
-> Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control. It aims to provide just the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to fuller featured IDEs, such as Visual Studio IDE.
+> Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control. It aims to provide only the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to fuller featured IDEs, such as the Visual Studio IDE.
 
 # Install VS Code on MacOS
 
-1. Visit <https://code.visualstudio.com/Download/>, download VS Code MacOS version to download it.
+1. Visit <https://code.visualstudio.com/Download/> and click on the VS Code MacOS version to download it.
 
 ![vscode_page](/assets/images/vscode/VScode_download_page.png)
 
-2. After downloading is done, double click that zip file. 
+2. After the downloading is done, double click the zip file. 
 
 ![vscode_page](/assets/images/vscode/vscode_mac_package.png)
 
-3. You will see "Visual Studio Code.app", drag it to Application folder.
+3. You will see "Visual Studio Code.app". Drag it to Application folder.
 
 ![vscode_page](/assets/images/vscode/vscode_mac_install.png)
 
-4. Till now, you have installed it on your Mac. Find it in your launchpad.
+4. Now you have installed VS Code on your Mac. Find it in your launchpad.
 
 ![vscode_page](/assets/images/vscode/vscode_mac_home.png)
 
-5. Open the [link](https://code.visualstudio.com/docs/?dv=osx) to learn how to use VS Code.
+5. Open this [link](https://code.visualstudio.com/docs/?dv=osx) to learn how to use VS Code.
 
 
 # Install VS Code on Windows
@@ -52,7 +52,7 @@ parent: Tools
 
    ![vscode_download_btn_clicked](/assets/images/vscode/vscode_download_btn_clicked.png)
 
-3. Install VSCode.
+3. Install VS Code.
 
    ![vscode_page](/assets/images/vscode/setup_vscode.png)
    ![vscode_page](/assets/images/vscode/completing_setup_vscode.png)

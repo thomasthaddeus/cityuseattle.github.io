@@ -4,12 +4,12 @@ title: Are you using Apple M1?
 parent: Common Solutions
 ---
 
-Apple released Apple Silicon Valley version or M1 in the end of 2020. The big thing is Apple changed their chip architecture from Intel to ARM. Some software has changed for it. However, some others are not. 
+Apple released Apple Silicon Valley version or M1 in the end of 2020. The big thing is that Apple changed their chip architecture from Intel to ARM. Some software has changed for it but some has not. 
 
 
-To check if you're using Apple M1? Follow the instructions below.
+To check if you're using Apple M1, follow the instructions below.
 
-- Click that Apple icon in the top-left corner.
+- Click the Apple icon in the top-left corner.
 
 - Click "About this Mac"
 

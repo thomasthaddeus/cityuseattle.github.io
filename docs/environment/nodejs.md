@@ -21,7 +21,7 @@ nav_order: 3
 
 ## Key Concepts
 
-* This tutorial is to install Node.js and NPM through the installer. If you need to install through the package manager, please refer to this tutorial: <https://nodejs.org/en/download/package-manager/>
+* This tutorial explains how to install Node.js and NPM through the installer. If you need to install through the package manager, please refer to this tutorial: <https://nodejs.org/en/download/package-manager/>
 * Downloading and installing Node.js and npm - <https://docs.npmjs.com/downloading-and-installing-node-js-and-npm>
 * About Node.js: "As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications." - <https://nodejs.org/en/about/>
 * Node.js on Wikipedia - <https://en.wikipedia.org/wiki/Node.js>
@@ -39,7 +39,7 @@ nav_order: 3
 
 # Section 1: Checking your version of NPM and Node.js
 
- 1. To see if you already have Node.js and NPM installed and check the installed version, run the following commands in your Terminal:
+ 1. To see if you already have Node.js and NPM installed and to check the installed version, run the following commands in your Terminal:
 
     ```bash
     $ node -v
@@ -49,13 +49,13 @@ nav_order: 3
 # Section 2: Using a Node installer to install Node.js and NPM
 
  1. If you're using MacOS or Windows, use one of the installers from the Node.js download page.  
-    Open <https://nodejs.org/en/download/> then download latest version of Node.js Installable archive file.  
+    Open <https://nodejs.org/en/download/> then download the latest version of the Node.js installable archive file.  
     Be sure to install the version labeled long-term support (**LTS**).  
-    (As of Sep 22, 2021, the latest Node.js LTS version is 14.17.6, includes NPM 6.14.15)  
+    (As of Sep 22, 2021, the latest Node.js LTS version is 14.17.6 which includes NPM 6.14.15)  
 
     ![](/assets/images/node/nodejs_download_page.png)
 
- 2. Install the Node.js
+ 2. Install Node.js
 
     ![](/assets/images/node/installing_win.png)
 
@@ -63,4 +63,4 @@ nav_order: 3
 
     ![](/assets/images/node/installing_mac.png)
 
- 3. Please re-execute [Section 1](#section-1-checking-your-version-of-npm-and-nodejs) to verify the installation is successful.
+ 3. Please re-execute [Section 1](#section-1-checking-your-version-of-npm-and-nodejs) to verify the installation was successful.

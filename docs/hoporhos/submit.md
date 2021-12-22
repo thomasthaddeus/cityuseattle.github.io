@@ -35,7 +35,7 @@ git push origin main
 [main 93e1062] Submission for Module06 - Wenzhi Xu
  1 file changed, 0 insertions(+), 0 deletions(-)
  create mode 100644 .DS_Store
-❯ git push origin master
+❯ git push origin main
 Enumerating objects: 4, done.
 Counting objects: 100% (4/4), done.
 Delta compression using up to 8 threads
@@ -44,13 +44,13 @@ Writing objects: 100% (3/3), 591 bytes | 591.00 KiB/s, done.
 Total 3 (delta 1), reused 0 (delta 0), pack-reused 0
 remote: Resolving deltas: 100% (1/1), completed with 1 local object.
 To github.com:cityuseattle/IS440-HOP06-Fall-2021.git
-   91edf39..93e1062  master -> master
+   91edf39..93e1062  main -> main
 ```
 
 
 ### GitHub Desktop.
 
-After you finish your HOP or HOS, you can see all changes on GitHub Desktop. For example, if you finish your work on week6 and want to submit or push it to GitHub. You can type a summary and then commit it to master.
+After you finish your HOP or HOS, you can see all changes on GitHub Desktop. For example, if you finish your work on week 6 and want to submit or push it to GitHub, you can type a summary and then commit it to the main branch.
 
 ![](/assets/images/github-desktop-commit.png)
 

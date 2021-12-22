@@ -21,7 +21,7 @@ nav_order: 3
 
 ## Before You Start
 
-* Version numbers may not match with the most current version at the time of writing. If given the option to choose between stable release (long-term support) or most recent, please choose the stable release rather than beta-testing version.
+* Version numbers may not match with the most current version at the time of writing. If given the option to choose between stable release (long-term support) or most recent, please choose the stable release rather than the beta-testing version.
 * This tutorial targets Windows users and MacOS users.
 * There might be subtle discrepancies along the steps. Please use your best judgement while going through this cookbook style tutorial to complete each step.
 * For your working directory, use your course number. This tutorial may use a different course number as an example.  
@@ -34,7 +34,7 @@ nav_order: 3
 
 Students will be able to:
 
-* Create and connect to Microsoft SQL Server Database
+* Create and connect to a Microsoft SQL Server Database
 
 ## Resources
 
@@ -57,17 +57,17 @@ Students will be able to:
  1. Go to the Microsoft Download Center - <https://www.microsoft.com/en-us/sql-server/sql-server-downloads> and download the latest developer version for your machine
     ![](/assets/images/sqlserver/sql_server_download_page.png)
 
- 2. Once, the download is completed, run the downloaded exe and choose Basic for installation type.
+ 2. Once the download is completed, run the downloaded .exe file and choose Basic for the installation type.
 
     ![](/assets/images/sqlserver/sql_server_install_page.png)
 
- 3. Continue with the installation and  once the installation is complete , click Close.
+ 3. Continue with the installation and once the installation is complete, click Close.
 
     ![](/assets/images/sqlserver/sql_server_install_successfully.png)
 
- 4. To verify the SQL server instance, Click Windows +R and type services.msc and click Ok. You should be able to see SQL Server instance running. Make a note of the sql server instance that you just created.
+ 4. To verify the SQL server instance, click Windows + R and type services.msc, then click Ok. You should be able to see a SQL Server instance running. Make a note of the sql server instance that you just created.
 
-    SQL server is that an instance is a copy of the sqlservr.exe executable that runs as an operating system service.
+    A SQL server instance is a copy of the sqlservr.exe executable that runs as an operating system service.
 
     ![](/assets/images/sqlserver/win_run.png)
 
@@ -83,7 +83,7 @@ Students will be able to:
 
 # Connect to the Microsoft SQL Server Database
 
- 1. Once you have completed your download, install, and open the program and enter the following in the dialog box:
+ 1. Once you have completed your download, install and open the program and enter the following in the dialog box:
 
     ![](/assets/images/sqlserver/connect_sql_server.png)
 
@@ -99,7 +99,7 @@ Students will be able to:
 
 ## AdventureWorks sample database backup copy
 
-To get the OLTP downloads of AdventureWorks, go to this [link](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15). You can choose any, in my example, I choose AdventureWorks2017.bak version. 
+To get the OLTP downloads of AdventureWorks, go to this [link](https://docs.microsoft.com/en-us/sql/samples/adventureworks-install-configure?view=sql-server-ver15). You can choose any. In my example, I chose the AdventureWorks2017.bak version. 
 
 ![](/assets/images/sqlserver/download_backup_files_page.png)
 
@@ -107,7 +107,7 @@ To get the OLTP downloads of AdventureWorks, go to this [link](https://docs.micr
 
 ### Restore backup
 
-Follow the below steps to restore a backup of your database using SQL Server Management Studio.
+Follow the steps below to restore a backup of your database using SQL Server Management Studio.
 
  1. Open SQL Server Management Studio and connect to the target SQL Server instance.
 
@@ -119,11 +119,11 @@ Follow the below steps to restore a backup of your database using SQL Server Man
 
     ![](/assets/images/sqlserver/ssms_restore_db_page.png)
 
- 4. In the dialog Select backup devices, click Add, navigate to the database backup in the filesystem of the server, and select the backup. Click OK.
+ 4. In the Select backup devices dialog, click Add, then navigate to the database backup in the filesystem of the server and select the backup. Click OK.
 
     ![](/assets/images/sqlserver/ssms_select_backup_devices.png)
 
- 5. If needed, change the target location for the data and log files, in the Files pane. Note that it is best practice to place data and log files on different drives.
+ 5. If needed, change the target location for the data and log files in the Files pane. Note that it is a best practice to place data and log files on different drives.
 
     ![](/assets/images/sqlserver/ssms_locate_backup_file_selector.png)
 

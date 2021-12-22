@@ -16,28 +16,28 @@ nav_order: 2
 # A Guide for HOP or HOS
 
 
-This guide is for any courses' HOP (for undergraduates) or HOS (for graduates) that's on GitHub. The unique difference is the course number. I'll use 624 as the example to show you how to do your HOP or HOS (Please remember to use your correct course number instead of 624)
+This guide is for any courses' HOP (for undergraduates) or HOS (for graduates) assignments that are on GitHub. The unique difference is the course number. I'll use 624 as an example to show you how to do your HOP or HOS (please remember to use your correct course number instead of 624).
 
 # Preparation
 
 The **first thing** you need to consider is finding a place to store your HOP or HOS repositories. 
 
-There is a [recommend way](../organization/) to organize your 10 week's course content. Please take a look and create those folders for the course.
+There is a [recommend way](../organization/) to organize your 10 weeks of course content. Please take a look at the guide and create the necessary folders for the course.
 
 # Clone or Download
 
-In this part, you have 2 ways to clone GitHub repository to your local machine. The first one is `Git Command Line` and the other is `GitHub Desktop`. You can choose anyone you're comfortable with.
+In this part, you have 2 ways to clone a GitHub repository to your local machine. The first one is `Git Command Line` and the other is `GitHub Desktop`. You can choose whichever one you're comfortable with.
 
-**Notice: If you have no experience with Git or GitHub, the GitHub Desktop would be better choice.**
+**Notice: If you have no experience with Git or GitHub, GitHub Desktop would be a better choice.**
 
 
 ### Git Command Line
 
-In your local machine, open Terminal (for Mac) or Command Prompt (CMD for Windows), type the following commands clone(download the repository to your local machine)
+In your local machine, open the Terminal (for Mac) or Command Prompt (CMD for Windows). Type the following commands to clone the repository (download the repository to your local machine)
 
 **Don't have Git command?** Please follow [Install Git Command]({{ site.baseurl }}{% link docs/git/install.md %}) to install it
 
-* `cd {Your course path}/624/Module01` (Assume you're doing 1st week's HOP or HOS. cd Module02 if you're doing 2nd week's HOP or HOS)
+* `cd {Your course path}/624/Module01` (Assume you're doing the 1st week's HOP or HOS. cd Module02 if you're doing the 2nd week's HOP or HOS)
 
 ![HOP and HOS organized sturcture](/assets/images/hos-readme-sample.png)
 
@@ -45,19 +45,19 @@ In your local machine, open Terminal (for Mac) or Command Prompt (CMD for Window
 
 ![HOP and HOS organized sturcture](/assets/images/hos-readme-clone.png)
 
-* `cd {repository name}` (Your repository name must be different with mine)
+* `cd {repository name}` (Your repository name will be different from mine)
 
 ![HOP and HOS organized sturcture](/assets/images/hos-readme-cd.png)
 
 ### GitHub Desktop
 
-* Open your GitHub repository web page and click that "Code" button. You'll see "Open with GitHub Desktop". Click that.
+* Open your GitHub repository web page and click the "Code" button. You'll see "Open with GitHub Desktop". Click that.
 
 ![](/assets/images/hos-readme-clone-desktop.png)
 
 * Install GitHub Desktop (If you have not installed GitHub Desktop, please follow [Install GitHub Desktop]({{ site.baseurl }}{% link docs/git/githubdesktop.md %}) to install it.)
 
-* After you install it, reclick "Open with GitHub Desktop". GitHub Deskotp will automaticlly pop up. Click "Choose" to select a correct local path to store it. Then click "Clone".
+* After you install it, reclick "Open with GitHub Desktop". GitHub Desktop will automaticlly pop up. Click "Choose" to select a correct local path to store it. Then click "Clone".
 
 ![](/assets/images/github-desktop-clone.png)
 
@@ -65,9 +65,9 @@ In your local machine, open Terminal (for Mac) or Command Prompt (CMD for Window
 
 # Follow the document and do your work
 
-You'll see some word document inside the repository. Follow the instruction and complete your work.
+You'll see some word document(s) or pdf file(s) inside the repository. Follow the instructions and complete your work.
 
 
 # Submit your work
 
-After you completing your work, follow [Submit your work](../submit/) to submit your work to GitHub.
+After completing your work, follow [Submit your work](../submit/) to submit your work to GitHub.

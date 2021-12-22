@@ -28,7 +28,7 @@ nav_order: 2
 
 ### Section 1: Checking your version of Git
 
- 1. Open a new Terminal, type and run the following command to see if you already have Git installed and check the installed version:
+ 1. Open a new Terminal to type and run the following command to see if you already have Git installed. This will also check the installed version:
 
    ```shell
    $ git --version
@@ -41,8 +41,8 @@ nav_order: 2
 ### Section 2: Using brew package manager to install Git
 
  1. There are several options for installing Git on macOS. Note that any non-source distributions are provided by third parties and may not be up to date with the latest source release.  
-   In this tutorial, we will use homebrew, a package manager in macOS, to install Git. If you don't like to use homebrew, you can follow <https://git-scm.com/download/mac> to install Git in other way.  
-   Note: if you encounter problems while installing Git using another way, TA may not be able to solve your problem.
+   In this tutorial, we will use homebrew, a package manager in macOS, to install Git. If you don't like to use homebrew, you can follow <https://git-scm.com/download/mac> to install Git in another way.  
+   Note: if you encounter problems while installing Git using another way, the TA may not be able to help solve your problem.
 
  2. Follow the steps in the link <https://sourabhbajaj.com/mac-setup/Homebrew/> to install homebrew if you don't already have it. For more information about what brew can do, visit the following link <https://brew.sh/>
 
@@ -54,7 +54,7 @@ nav_order: 2
 
     ![install_brew_output](/assets/images/install_brew_output.png)
 
- 4. If it asks you to press RETURN to continue, then press RETURN/Enter button.
+ 4. If it asks you to press RETURN to continue, then press the RETURN/Enter button.
 
     ![installing_brew_output](/assets/images/installing_brew_output.png)
 
@@ -74,7 +74,7 @@ nav_order: 2
 
  1. **First of all**, if you encounter any problems in this section, please read the official GitHub tutorial first, which can solve most of your problems. <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
 
- 2. The first thing you should do when you install Git is to set your username and email address. This is important because every Git commit uses this information, and it's immutably baked into the commits you start creating:  
+ 2. The first thing you should do when you install Git is set your username and email address. This is important because every Git commit uses this information, and it's immutably baked into the commits you start creating:  
     Note: replace `<username>` to your GitHub username, and `<email>` to the email address you used to register GitHub.  
 
     ```shell
@@ -82,9 +82,9 @@ nav_order: 2
     $ git config --global user.email <email>
     ```
 
-    If you want to know more about git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
+    If you want to know more about the git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
 
- 3. Enter `ls -al ~/.ssh` to see if existing SSH keys are present:
+ 3. Enter `ls -al ~/.ssh` to see if any SSH keys are present:
 
     ```shell
     $ ls -al ~/.ssh
@@ -97,7 +97,7 @@ nav_order: 2
     * id_ecdsa.pub
     * id_ed25519.pub
 
- 4. If you don't have an existing public and private key pair, type the following command, and generate a new SSH Key. Note: replace `<email>` to the email address you used to register GitHub.
+ 4. If you don't have an existing public and private key pair, type the following command to generate a new SSH Key. Note: replace `<email>` to the email address you used to register GitHub.
 
     ```shell
     $ ssh-keygen -t ed25519 -C "<email>"
@@ -130,7 +130,7 @@ nav_order: 2
     $ cat ~/.ssh/id_rsa.pub
     ```
 
- 6. Visit GitHub, in the upper-right corner of any GitHub page, click your profile photo, then click **Settings**.
+ 6. Open the GitHub website. In the upper-right corner of any GitHub page, click your profile photo, then click **Settings**.
 
     ![github_settings_dropdown_menu](/assets/images/github_settings_dropdown_menu.png)
 
@@ -178,21 +178,21 @@ nav_order: 2
 
  2. Open the file that was downloaded.
 
- 3. Choose yes to allow Git installation on your PC.
+ 3. Choose yes to allow the Git installation on your PC.
 
     ![user_account_control](/assets/images/user_account_control.png)
 
- 4. Go through the installation and choose the default option.
+ 4. Go through the installation and choose the default options.
 
     ![install_license](/assets/images/install_license.png)
 
- 5. For this one, we will choose the last option to give us extra commands to use.
+ 5. For this step, we will choose the last option to give us extra commands to use.
 
     ![path_env](/assets/images/path_env.png)
 
  6. For the rest of the installation, choose the default options. 
 
- 7. Uncheck View Release Notes because we do not need it.
+ 7. Uncheck "View Release Notes" because we do not need it.
 
     ![install_completing](/assets/images/install_completing.png)
 
@@ -200,11 +200,11 @@ nav_order: 2
 
 Once the installation is completed, open the cmd
 
- 1. In the search bar, type cmd, and choose Command Prompt.
+ 1. In the search bar, type cmd and choose Command Prompt.
 
     ![win_search](/assets/images/win_search.png)
 
- 2. In the cmd, type git --version, you will see git version 2.27.0.
+ 2. In the cmd window, type git --version. You should see git version 2.27.0 or greater.
 
     ![git_version_output](/assets/images/git_version_output.png)
 
@@ -214,11 +214,11 @@ Once the installation is completed, open the cmd
 
     **Then**, you need to add the PATH of Git into the Environment Variables
 
- 4. In the cmd, type "`where git`"
+ 4. In the cmd window, type "`where git`"
 
     ![where_git_output](/assets/images/where_git_output.png)
 
- 5. Copy the first one and add it to the environment variables.  
+ 5. Copy the first line and add it to the environment variables.  
     To open the environment variables in the search bar, type environment variables and choose Edit system environment variables.
 
     ![sys_path_env_editer_search](/assets/images/sys_path_env_editer_search.png)
@@ -227,21 +227,21 @@ Once the installation is completed, open the cmd
 
     ![sys_properties](/assets/images/sys_properties.png)
 
- 7. In the System Variables, choose Path, then select Edit Button.
+ 7. In the System Variables, choose Path, then select the Edit Button.
 
     ![env_var_page](/assets/images/env_var_page.png)
 
- 8. Choose New, then Paste the Git location that you copied from the cmd.
+ 8. Choose New, then Paste the Git location that you copied from the cmd window.
 
     ![add_new_path_env_var](/assets/images/add_new_path_env_var.png)
 
- 9. **Close the cmd**, then open it one more time and type `git --version` to make sure that the Git installed successfully.
+ 9. **Close the cmd window**, then open it one more time and type `git --version` to make sure that Git installed successfully.
 
 ### Section 3: First-time Git setup
 
  1. **First of all**, if you encounter any problems in this section, please read the official GitHub tutorial first, which can solve most of your problems. <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
 
- 2. The first thing you should do when you install Git is to set your username and email address. This is important because every Git commit uses this information, and it's immutably baked into the commits you start creating:  
+ 2. The first thing you should do when you install Git is set your username and email address. This is important because every Git commit uses this information, and it's immutably baked into the commits you start creating:  
     Note: replace `<username>` to your GitHub username, and `<email>` to the email address you used to register GitHub.  
 
     ```shell
@@ -249,9 +249,9 @@ Once the installation is completed, open the cmd
     $ git config --global user.email <email>
     ```
 
-    If you want to know more about git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
+    If you want to know more about the git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
 
- 3. Enter `ls -al ~/.ssh` to see if existing SSH keys are present:
+ 3. Enter `ls -al ~/.ssh` to see if any SSH keys are present:
 
     ```shell
     $ ls -al ~/.ssh
@@ -264,7 +264,7 @@ Once the installation is completed, open the cmd
     * id_ecdsa.pub
     * id_ed25519.pub
 
- 4. If you don't have an existing public and private key pair, type the following command, and generate a new SSH Key. Note: replace `<email>` to the email address you used to register GitHub.
+ 4. If you don't have an existing public and private key pair, type the following command to generate a new SSH Key. Note: replace `<email>` with the email address you used to register GitHub.
 
     ```shell
     $ ssh-keygen -t ed25519 -C "<email>"
@@ -297,7 +297,7 @@ Once the installation is completed, open the cmd
     $ cat ~/.ssh/id_rsa.pub
     ```
 
- 6. Visit GitHub, in the upper-right corner of any GitHub page, click your profile photo, then click **Settings**.
+ 6. Open the GitHub website. In the upper-right corner of any GitHub page, click your profile photo, then click **Settings**.
 
     ![github_settings_dropdown_menu](/assets/images/github_settings_dropdown_menu.png)
 
