@@ -1,26 +1,36 @@
 ---
 layout: default
-title: A guide for HOP or HOS
-parent: HOP OR HOS
+title: A Guide for HOP/HOS/TT
+parent: HOP, HOS and TT
 nav_order: 2
 ---
 
 
-{: .no_toc }
+## Table of contents
+{: .no_toc .text-delta }
 
-
+1. TOC
 {:toc}
 
 ---
 
-# A Guide for HOP or HOS
+
+# A Guide for HOP, HOS or TT
 
 
-This guide is for any courses' HOP (for undergraduates) or HOS (for graduates) assignments that are on GitHub. The unique difference is the course number. I'll use 624 as an example to show you how to do your HOP or HOS (please remember to use your correct course number instead of 624).
+This guide is for any courses' HOP (Hands-On Practice), HOS (Hands-On Skill) or TT (Technology Tool) assignments that are on GitHub. 
+
+- **HOP**: For undergraduates
+
+- **HOS**: For graduates
+
+- **TT**: For Phd
+
+The unique difference is the course number. I'll use 624 as an example to show you how to do your HOP, HOS or TT (**please remember to use your correct course number instead of 624**).
 
 # Preparation
 
-The **first thing** you need to consider is finding a place to store your HOP or HOS repositories. 
+The **first thing** you need to consider is finding a place to store your HOP, HOS or TT repositories. 
 
 There is a [recommend way](../organization/) to organize your 10 weeks of course content. Please take a look at the guide and create the necessary folders for the course.
 
@@ -37,7 +47,7 @@ In your local machine, open the Terminal (for Mac) or Command Prompt (CMD for Wi
 
 **Don't have Git command?** Please follow [Install Git Command]({{ site.baseurl }}{% link docs/git/install.md %}) to install it
 
-* `cd {Your course path}/624/Module01` (Assume you're doing the 1st week's HOP or HOS. cd Module02 if you're doing the 2nd week's HOP or HOS)
+* `cd {Your course path}/624/Module01` (Assume you're doing the 1st week's HOP, HOS or TT. cd Module02 if you're doing the 2nd week's HOP or HOS)
 
 ![HOP and HOS organized sturcture](/assets/images/hos-readme-sample.png)
 

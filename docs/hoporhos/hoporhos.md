@@ -1,12 +1,12 @@
 ---
 layout: default
-title: HOP OR HOS
+title: HOP, HOS and TT
 nav_order: 3
 has_children: true
 permalink: docs/hoporhos
 ---
 
-# HOP or HOS
+# HOP, HOS and TT
 
 {: .no_toc .text-delta }
 

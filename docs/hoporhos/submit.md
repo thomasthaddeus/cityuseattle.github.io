@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Submit your work
-parent: HOP OR HOS
+parent: HOP, HOS and TT
 nav_order: 3
 ---
 

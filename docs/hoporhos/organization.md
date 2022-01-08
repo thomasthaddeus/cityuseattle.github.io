@@ -1,7 +1,7 @@
 ---
 layout: default
-title: Organize HOP/HOS
-parent: HOP OR HOS
+title: Organize HOP/HOS/TT
+parent: HOP, HOS and TT
 nav_order: 2
 ---
 
