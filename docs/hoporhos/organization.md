@@ -16,7 +16,7 @@ nav_order: 2
 
 ---
 
-# How to organize your HOP/HOS repository for class?
+# How to organize your HOP/HOS/TT repository for class?
 
 We have 10 weeks every quarter. For doing homework, we will always download files or clone repository from GitHub. A recommended file structure is included below. We will create 10 folders under the course - one for each week.
 

@@ -24,7 +24,7 @@ This guide is for any courses' HOP (Hands-On Practice), HOS (Hands-On Skill) or 
 
 - **HOS**: For graduates
 
-- **TT**: For Phd
+- **TT**: For doctorates
 
 The unique difference is the course number. I'll use 624 as an example to show you how to do your HOP, HOS or TT (**please remember to use your correct course number instead of 624**).
 
@@ -47,7 +47,7 @@ In your local machine, open the Terminal (for Mac) or Command Prompt (CMD for Wi
 
 **Don't have Git command?** Please follow [Install Git Command]({{ site.baseurl }}{% link docs/git/install.md %}) to install it
 
-* `cd {Your course path}/624/Module01` (Assume you're doing the 1st week's HOP, HOS or TT. cd Module02 if you're doing the 2nd week's HOP or HOS)
+* `cd {Your course path}/624/Module01` (Assume you're doing the 1st week's HOP, HOS or TT. cd Module02 if you're doing the 2nd week's assignment.)
 
 ![HOP and HOS organized sturcture](/assets/images/hos-readme-sample.png)
 
