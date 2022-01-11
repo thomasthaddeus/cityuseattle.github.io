@@ -8,6 +8,8 @@ services:
       - 4000:4000
     volumes:
       - .:/usr/src/app
+    environment:
+      - JEKYLL_ENV=development2
     stdin_open: true
     tty: true
     command: bundle exec jekyll serve --config _config_local.yml -H 0.0.0.0 -t
