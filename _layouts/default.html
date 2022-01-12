@@ -99,12 +99,18 @@ layout: table_wrappers
       </div>
       <script>
         (function () {
+          var siteColorScheme = '{{site.color_scheme}}';
+          if (siteColorScheme == 'nil') siteColorScheme = 'default';
+          var isSiteColorSchemeDark = siteColorScheme == 'dark';
           var toggleDarkMode = document.getElementById('switch-style');
+          toggleDarkMode.checked = (isSiteColorSchemeDark && jtd.getTheme() == 'default') || jtd.getTheme() == 'dark';
+          function setTheme(theme) {
+            jtd.setTheme(theme);
+            if (theme == 'default') cookie.del('userColorPreference');
+            else cookie.set('userColorPreference', theme);
+          }
           jtd.addEvent(toggleDarkMode, 'change', function () {
-            if (toggleDarkMode.checked && jtd.getTheme() !== 'dark')
-              jtd.setTheme('dark');
-            else
-              jtd.setTheme('light');
+            setTheme(toggleDarkMode.checked? isSiteColorSchemeDark? 'default': 'dark': isSiteColorSchemeDark? 'light': 'default');
           });
         })();
       </script>
