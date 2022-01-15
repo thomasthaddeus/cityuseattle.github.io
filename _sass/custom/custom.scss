@@ -1,4 +1,10 @@
 
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 .main {
   overflow-y: auto;
   scrollbar-width: none;  // Firefox
