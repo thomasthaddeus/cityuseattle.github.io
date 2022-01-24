@@ -23,7 +23,7 @@ search_exclude: true
     }
 </style>
 
-<h1>Page not found</h1>
+<h1>Page Not Found</h1>
 
 <script>
 (function() {
@@ -40,6 +40,17 @@ search_exclude: true
     };
 })();
 </script>
+
+<!--
+TODO:
+* Turn on gravity sensing on all devices (especially iOS).
+* Resets the camera's position in a spring effect after the mouse moves out of the canvas.
+* Change the color calculation formula, when the theme is in light, reduce the color saturation (add some blue/yellow/red).
+* Add a boundary, so that particles can bounce after touching the boundary.
+* Improve webgl compatibility, and also have reasonable display in devices that cannot run webgl2/webgl1 without float/webgl1.
+* Customize the computation process of GPGPU to use vertex shaders instead of fragment shaders for parallel computation in webgl2 capable devices.
+* Added Asymmetric Projection special effects. Randomly chooses whether to use the current particle effect or the newly added feature when the user enters the page.
+-->
 
 <script>
 window.onload = async () => { try {
@@ -97,87 +108,8 @@ window.onload = async () => { try {
     tMesh.geometry.dispose();
     tMesh = null;
 
-    let positionVariable = gpuCompute.addVariable("texturePosition", `
-        uniform float time;
-        uniform sampler2D origin;
-        uniform vec4 colliders[MAX_COLLIDERS];
-        uint curRandomSeed;
-        float rand() {
-            curRandomSeed = (uint(214013) * curRandomSeed + uint(2531011));
-            return float((curRandomSeed >> 16) & uint(0x7FFF)) / 32767.0;
-        }
-        void main() {
-            vec2 uv = gl_FragCoord.xy / resolution.xy;
-            vec4 oldPos = texture2D(texturePosition, uv);
-            vec4 oldVel = texture2D(textureVelocity, uv);
-            curRandomSeed = floatBitsToUint(oldVel.w);
-            vec4 outPos = oldPos;
-            float resetRate = oldPos.w == 1.0? 0.998: 0.97;
-            if (rand() > resetRate) {
-                outPos = texture2D(origin, uv);
-            }
-            else {
-                outPos = vec4(oldPos.xyz + oldVel.xyz, oldPos.w);
-                for (int i = 0; i < MAX_COLLIDERS; ++i) {
-                    vec3 posToCollider = oldPos.xyz - colliders[i].xyz;
-                    float dist = length(posToCollider);
-                    if (dist < colliders[i].w) {
-                        vec3 movement = normalize(posToCollider) * colliders[i].w;
-                        outPos += vec4(movement, 0.0);
-                        outPos.w = 1.0;
-                    }
-                }
-            }
-            gl_FragColor = outPos;
-        }
-    `, dtPosition);
-    let velocityVariable = gpuCompute.addVariable("textureVelocity", `
-        uniform float time;
-        uniform sampler2D origin;
-        uniform vec4 colliders[MAX_COLLIDERS];
-        uint curRandomSeed;
-        float rand() {
-            curRandomSeed = (uint(214013) * curRandomSeed + uint(2531011));
-            return float((curRandomSeed >> 16) & uint(0x7FFF)) / 32767.0;
-        }
-        void main() {
-            vec2 uv = gl_FragCoord.xy / resolution.xy;
-            vec4 oldPos = texture2D(texturePosition, uv);
-            vec4 oldVel = texture2D(textureVelocity, uv);
-            curRandomSeed = floatBitsToUint(oldVel.w);
-            vec4 outVel;
-            float resetRate = oldPos.w == 1.0? 0.998: 0.97;
-            if (rand() > resetRate) {
-                float tx = rand(); float ty = rand(); float tz = rand();
-                outVel.xyz = (vec3(tx, ty, tz) - 0.5) * 0.004;
-            }
-            else {
-                vec4 newPos = vec4(oldPos.xyz + oldVel.xyz, oldPos.w);
-                outVel = oldVel;
-                if (oldPos.w == 1.0) {
-                    outVel *= 0.95;
-                    vec4 originPos = texture2D(origin, uv);
-                    vec3 resetVec = normalize(originPos.xyz - newPos.xyz) * 0.0005;
-                    outVel.xyz += resetVec;
-                }
-                for (int i = 0; i < MAX_COLLIDERS; ++i) {
-                    vec3 posToCollider = newPos.xyz - colliders[i].xyz;
-                    float dist = length(posToCollider);
-                    if (dist < colliders[i].w) {
-                        vec3 movement = normalize(posToCollider) * colliders[i].w;
-                        outVel += vec4(movement * 0.1, 0.0);
-                    }
-                    float forceFieldDist = (colliders[i].w * 2.0 - dist);
-                    if (forceFieldDist > 0.0) {
-                        vec2 tangentToCollider = normalize(vec2(posToCollider.y, -posToCollider.x));
-                        outVel.xy += tangentToCollider * 0.0007;
-                    }
-                }
-            }
-            outVel.w = uintBitsToFloat(curRandomSeed);
-            gl_FragColor = outVel;
-        }
-    `, dtVelocity);
+    let positionVariable = gpuCompute.addVariable("texturePosition", `{% include_relative fboPosition.frag %}`, dtPosition);
+    let velocityVariable = gpuCompute.addVariable("textureVelocity", `{% include_relative fboVelocity.frag %}`, dtVelocity);
     gpuCompute.setVariableDependencies(positionVariable, [positionVariable, velocityVariable]);
     gpuCompute.setVariableDependencies(velocityVariable, [positionVariable, velocityVariable]);
     positionVariable.material.defines.MAX_COLLIDERS = MAX_COLLIDERS;
@@ -194,12 +126,14 @@ window.onload = async () => { try {
         origin: {value: originTex},
         colliders: { value: colliders },
     }).forEach(([k, v]) => velocityUniforms[k] = v);
-    velocityVariable.wrapS = THREE.RepeatWrapping;
-    velocityVariable.wrapT = THREE.RepeatWrapping;
-    positionVariable.wrapS = THREE.RepeatWrapping;
+    velocityVariable.wrapS =
+    velocityVariable.wrapT =
+    positionVariable.wrapS =
     positionVariable.wrapT = THREE.RepeatWrapping;
     const error = gpuCompute.init();
     if (error) console.error(error);
+    velocityVariable.material.fragmentShader = velocityVariable.material.fragmentShader.replace("uniform sampler2D textureVelocity;\n\nuniform sampler2D texturePosition;", "");
+    positionVariable.material.fragmentShader = positionVariable.material.fragmentShader.replace("uniform sampler2D textureVelocity;\n\nuniform sampler2D texturePosition;", "");
 
     let colors = {
         "dark": {
@@ -221,36 +155,8 @@ window.onload = async () => { try {
             "darkColor": { value: isDark()? colors.dark.darkColor: colors.light.darkColor },
             "lightColor": { value: isDark()? colors.dark.lightColor: colors.light.lightColor },
         },
-        vertexShader: `
-            uniform sampler2D texturePosition;
-            uniform float width;
-            uniform float height;
-            uniform float pointSize;
-            varying vec3 vPosition;
-            varying vec2 vUv;
-            void main() {
-                vec2 size = vec2(width, height);
-                vUv = position.xy + 0.5 / size;
-                vPosition = texture2D(texturePosition, vUv).xyz;
-
-                gl_PointSize = pointSize;
-                gl_Position = projectionMatrix * modelViewMatrix * vec4( vPosition, 1.0 );
-            }`,
-        fragmentShader: `
-            varying vec3 vPosition;
-            varying vec2 vUv;
-            uniform vec4 darkColor;
-            uniform vec4 lightColor;
-
-            void main() {
-                float depth = gl_FragCoord.w / gl_FragCoord.z;
-                gl_FragColor = vec4(
-                    mix(lightColor.r, darkColor.r, (1.0 / (depth) ) * darkColor.w),
-                    mix(lightColor.g, darkColor.g, (1.0 / (depth) ) * darkColor.w),
-                    mix(lightColor.b, darkColor.b, (1.0 / (depth) ) * darkColor.w),
-                    depth
-                );
-            }`,
+        vertexShader: `{% include_relative text.vert %}`,
+        fragmentShader: `{% include_relative text.frag %}`,
         blending: THREE.AdditiveBlending,
         depthWrite: false,
         depthTest: true,
