@@ -8,7 +8,7 @@ nav_order: 4
 # Install Keil µVision 5 ARMs assembly IDE
 {: .no_toc }
 
-<p align="center"><img alt="keil_logo" src="//assets/images/install_keil/keil_logo.png"/></p>
+<p align="center"><img alt="keil_logo" src="/assets/images/install_keil/keil_logo.png"/></p>
 
 ## Before You Start
 {: .no_toc }
@@ -31,7 +31,7 @@ Unfortunately, Keil® MDK is not available for Mac devices at the time of creati
 
 # For Windows Users
 
-Keil® MDK is the most comprehensive software development solution for Arm®-based microcontrollers and includes all components that you need to create, build, and debug embedded applications. Additional information can be found in the official website [here](https://www2.keil.com/mdk5/uvision/). This software is provided by ARM. To download the Development Kit, browse [here](https://www2.keil.com/mdk5/) and click on the `Download MDK`. You will be required to fill in the form and follow the instructions to install the latest version of Keil µVision as shown below:
+Keil® Microcontroller Development Kit (MDK) is the most comprehensive software development solution for Arm®-based microcontrollers and includes all components that you need to create, build, and debug embedded applications. Additional information can be found in the official website [here](https://www2.keil.com/mdk5/uvision/). This software is provided by ARM. To download the Development Kit, browse [here](https://www2.keil.com/mdk5/) and click on the `Download MDK`. You will be required to fill in the form and follow the instructions to install the latest version of Keil µVision as shown below:
 
 ![keil_download_page](/assets/images/install_keil/keil_download_page.png)
 
@@ -83,6 +83,62 @@ The following steps will demonstrate how to install the packages you need throug
 
     ![install_pack](/assets/images/install_keil/install_pack.png)
 
+# FAQs
+
+## error: L6050U The code size
+
+Refer to section [Limit](#limit).
+
+## How can I see the output in the simulator?
+
+ 1. After you have created the project. Click on `Manage Run-Time Environment`.
+
+    ![mrte_btn](/assets/images/install_keil/mrte_btn.png)
+
+ 2. Expand and select `Compiler` > `I/O` > `STDOUT`, and change `Breakpoint` to `ITM`.
+
+    ![stdout_env](/assets/images/install_keil/stdout_env.png)
+
+ 3. After successfully compiling the code, click `Start/Stop Debug Session`.
+
+    ![debug_session_btn](/assets/images/install_keil/debug_session_btn.png)
+
+ 4. After entering the debug session, in the `View` above, find `Serial Windows`, and select `Debug (printf) Viewer`.
+
+    ![view_serial_win_debug_viewer](/assets/images/install_keil/view_serial_win_debug_viewer.png)
+
+ 5. After completing the above operations, you can see that this `Debug (printf) Viewer` window appears in the lower right corner.
+
+    ![debug_viewer_win](/assets/images/install_keil/debug_viewer_win.png)
+
+ 6. Execute your code and check the `Debug (printf) Viewer` window, if there is anything in the code that prints to stdout like `cout` or `printf`, it will be shown in this window.
+
+    ![debug_output_example](/assets/images/install_keil/debug_output_example.png)
+
+## Error: L6218E: Undefined symbol Image
+
+Click on `Options for Target...`. Select `Linker`, click the ellipsis (`...`) next to `Scatter File`, navigate to `.\RTE\Device\[the device you are currently using]\` in your current project directory, there is a file of type `.sct`, select it. If not, please contact your TA to find other solutions.
+
+# Limit
+
+Since we are downloading the free Keil Lite version of the MDK, there are limitations. A full list of limitations can be found [here](https://www2.keil.com/mdk5/selector).
+
+* If you get an error similar to the following during use, it is due to the limitation of the free version. The free version of Debugger, Compiler, Linker, Libraries, and Utilities only supports 32KBytes code size.
+
+  `.\Objects\lite.axf: error: L6050U: The code size of this image (84902 bytes) exceeds the maximum allowed for this version of the linker.`
+
+  ![lite_linker_limit](/assets/images/install_keil/lite_linker_limit.png)
+
+  There is no solution to this error. But in general, C++ will use more space than C, you can try to use C code.
+
+* The full current device support list is [here](https://www.keil.com/dd2/), and the full legacy device list is [here](https://www.keil.com/dd/). But if you can't find chips of ARM Cortex-A series, ARM SecurCore®, ARM Cortex-R series, in the device list, it is due to the limitation of the free version.
+
+  If you are looking for a chip that supports double floating-point precision that can be debugged in the simulator, unfortunately, we TAs have no solution yet. Although some chips with the `-DP` suffix support double floating-point precision, there are various issues in the simulator. For example, the error `No CPU DLL specified under 'Options for Target - Debug' !` or `Error: Target Driver not specified. Debugger aborted !` appears when starting a debug session; there is no read/write permission during running; even double-precision floating-point numbers are not passed to the FPU during runtime.
+
 # Resource
 
 * Keil Downloads: <https://www.keil.com/download/product/>
+* MDK5 Device List: <https://www.keil.com/dd2/>
+* Legacy Device List: <https://www.keil.com/dd/>
+* Compare MDK Editions: <https://www2.keil.com/mdk5/selector>
+* µVision® Debugger: <https://www2.keil.com/mdk5/debug/>
