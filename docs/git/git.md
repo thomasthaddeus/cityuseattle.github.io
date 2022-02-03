@@ -12,14 +12,6 @@ permalink: docs/git
 
 People use GitHub to build some of the most advanced technologies in the world. Whether you’re visualizing data or building a new game, there’s a whole community and set of tools on GitHub that can help you do it even better.
 
-{: .fs-6 .fw-300 }
-
-## Table of contents
-{: .no_toc .text-delta }
-
-1. TOC
-{:toc}
-
 ---
 
 Version control systems (VCS) make it easy to store different versions of a project (without any fixed rules or time). You can easily restore an earlier record and compare the content with the current data to find the differences. In addition, VCS are an effective tool to cooperate with many other people in the same project. In this section, we will learn about one of the most popular VCS, which is Git and GitHub.

@@ -11,7 +11,7 @@ permalink: /
 
 ### Get Started
 
-Welcome to the CityU STC TA Center. We're here to share technical knowledge and help solve your problems quickly. In addition, we hope you learn something from here as well. 
+Welcome to the CityU STC TA Center. We're here to share technical knowledge and help solve your problems quickly. In addition, we hope you learn something from here as well.
 
 This website is hosted on GitHub Pages and is open to anyone - not just CityU TAs. If you want to contribute or find something wrong, please read more about becoming a contributor in [our GitHub repo](https://github.com/cityuseattle/cityuseattle.github.io#contributing).
 

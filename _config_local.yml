@@ -19,7 +19,12 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://localhost:4000" # the base hostname & protocol for your site, e.g. http://example.com
 
 permalink: pretty
-exclude: ["node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock", "package.json", "package-lock.json",  "script/", "LICENSE.txt", "lib/", "bin/", "README.md", "Rakefile", "docs/tests/"]
+exclude: [
+  "node_modules/", "*.gemspec", "*.gem", "Gemfile", "Gemfile.lock",
+  "package.json", "package-lock.json",  "script/", "LICENSE.txt",
+  "lib/", "bin/", "README.md", "GUIDE.md", "Rakefile", "docs/tests/",
+  "docker-compose.yml", "_config_local.yml"
+]
 
 # Regression tests
 # By default, the pages in /docs/tests are excluded when the ste is built.

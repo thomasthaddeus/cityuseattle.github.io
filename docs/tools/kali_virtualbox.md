@@ -16,7 +16,7 @@ parent: Tools
 
 # Prepare
 
- 1. This tutorial is a guide on how to install Kali Linux in VirtualBox. If you have not installed VirtualBox, please refer to [here]({{ site.baseurl }}{% link docs/tools/virtualbox.md %}). This tutorial is available for MacOS and Windows.
+ 1. This tutorial is a guide on how to install Kali Linux in VirtualBox. If you have not installed VirtualBox, please refer to [here]({{ site.baseurl }}{% link docs/tools/virtualbox.md %}). This tutorial is available for macOS and Windows.
 
  2. Open the [Kali Linux official website](https://www.kali.org/). Click the `DOWNLOAD` or `GET KALI` button.
 
@@ -32,7 +32,7 @@ parent: Tools
 
 # Install
 
- 1. After you have downloaded the image, the most convenient way is to double-click to open it. If your computer associates the opening method of related files when installing VirtualBox, the following interface will be displayed after double-clicking (screenshot of the interface is for MacOS, but a similar interface with the same options appears on Windows).
+ 1. After you have downloaded the image, the most convenient way is to double-click to open it. If your computer associates the opening method of related files when installing VirtualBox, the following interface will be displayed after double-clicking (screenshot of the interface is for macOS, but a similar interface with the same options appears on Windows).
 
     ![double_clicking](/assets/images/kali_virtualbox/double_clicking.png)
 
@@ -52,12 +52,11 @@ parent: Tools
 
     Give it a minute or so, until the importation should be complete.
 
-    ![Importing-Kali-Linux-Latest-Version-OVA-in-virtualBox](/assets/images/kali_virtualbox/Importing-Kali-Linux-Latest-Version-OVA-in-virtualBox.png)
+    ![Importing-Kali-Linux-Latest-Version-OVA-in-VirtualBox](/assets/images/kali_virtualbox/Importing-Kali-Linux-Latest-Version-OVA-in-virtualBox.png)
 
  3. If the import is successful, you will see a new item added in the VirtualBox homepage. The item may have a different name.
 
     ![kali_linux_item_in_vb](/assets/images/kali_virtualbox/kali_linux_item_in_vb.png)
-
 
  4. Start Kali Linux for the first time may show the Boost menu, select the first option, and press Enter to make it install by default. Wait for a while and you can see the Kali login interface, the login user name is `kali`, and the password is `kali`.
 

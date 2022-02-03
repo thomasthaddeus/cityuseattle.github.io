@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Install virtualbox
+title: Install VirtualBox
 parent: Tools
 ---
 
@@ -15,11 +15,10 @@ parent: Tools
 ---
 
 
-# Install VirtualBox on MacOS (No Apple Silicon Valley Support)
+# Install VirtualBox on macOS (No Apple Silicon Support)
 
-**If you're using Apple Silicon Valley, VirtualBox may not work well. You will need to find alternatives.**
-
-[Check if you're using Apple Silicon Valley]({{ site.baseurl }}{% link docs/common/applem1.md %})
+**If you're using Apple Silicon (≥ M1), VirtualBox may not work well. You will need to find alternatives.**
+[Check if you're using Apple Silicon]({{ site.baseurl }}{% link docs/common/applem1.md %})
 
  1. Open the [VirtualBox download page](https://www.virtualbox.org/wiki/Downloads), then choose the latest version and click "OS X hosts"
 
@@ -33,7 +32,7 @@ parent: Tools
 
     ![virtualbox_installing](/assets/images/virtualbox/virtualbox_homepage.png)
 
- 4. To avoid VirtualBox complaining about the kernel driver in the future, i.e. the error is shown below, you must explicitly allow VirtualBox to load, in the MacOS system preferences, within the first 30 minutes after VirtualBox is installed.
+ 4. To avoid VirtualBox complaining about the kernel driver in the future, i.e. the error is shown below, you must explicitly allow VirtualBox to load, in the macOS system preferences, within the first 30 minutes after VirtualBox is installed.
 
     ![kernel_driver_not_installed](/assets/images/virtualbox/kernel_driver_not_installed.png)
 
@@ -53,7 +52,7 @@ parent: Tools
 
     ![virtualbox_download_page](/assets/images/virtualbox/virtualbox_windows_homepage.png)
 
- 2. Once you get the downloaded install package, click on it and you will see the image below. Click on VirtualBox-xxxxx-Win.exe. In the next several steps, you will see some questions during the installation process. 
+ 2. Once you get the downloaded install package, click on it and you will see the image below. Click on VirtualBox-xxxxx-Win.exe. In the next several steps, you will see some questions during the installation process.
 
     ![virtualbox_installing](/assets/images/virtualbox/virtualbox_windows_install.png)
 

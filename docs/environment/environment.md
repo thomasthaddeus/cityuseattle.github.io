@@ -6,8 +6,5 @@ has_children: true
 permalink: docs/env
 ---
 
-# Tools
+# Environment
 {: .no_toc }
-
-
-{: .fs-6 .fw-300 }

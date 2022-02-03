@@ -22,8 +22,7 @@ parent: Tools
 
 "Oh My ZSH!"
 
-
-#### Install It
+### Install It
 
 ```bash
 $ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"

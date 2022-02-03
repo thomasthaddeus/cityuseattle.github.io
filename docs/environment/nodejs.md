@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Install nodejs and npm
+title: Install Node.js and npm
 parent: Environment
 nav_order: 3
 ---
@@ -23,27 +23,27 @@ nav_order: 3
 * About Node.js: "As an asynchronous event-driven JavaScript runtime, Node.js is designed to build scalable network applications." - <https://nodejs.org/en/about/>
 * Node.js on Wikipedia - <https://en.wikipedia.org/wiki/Node.js>
 * Node.js website - <https://nodejs.org/>
-* NPM Documentation - <https://docs.npmjs.com/>
+* npm Documentation - <https://docs.npmjs.com/>
 
-# Section 1: Checking your version of NPM and Node.js
+# Section 1: Checking your version of npm and Node.js
 
- 1. To see if you already have Node.js and NPM installed and to check the installed version, run the following commands in your Terminal:
+ 1. To see if you already have Node.js and npm installed and to check the installed version, run the following commands in your Terminal:
 
     ```bash
     $ node -v
     $ npm -v
     ```
 
-    If your node.js version is lower than v8, please uninstall your previous node.js and follow the steps in Section 2.
+    If your Node.js version is lower than v8, please uninstall your previous Node.js and follow the steps in Section 2.
 
-# Section 2: Using a Node installer to install Node.js and NPM
+# Section 2: Using a Node installer to install Node.js and npm
 
- 1. This tutorial explains how to install Node.js and NPM through the installer. If you want to install through the package manager, please refer to [this](https://nodejs.org/en/download/package-manager/) tutorial. If you want/need to install multiple versions of node.js and npm on your computer, do your own research on how to install and use [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm).
+ 1. This tutorial explains how to install Node.js and npm through the installer. If you want to install through the package manager, please refer to [this](https://nodejs.org/en/download/package-manager/) tutorial. If you want/need to install multiple versions of Node.js and npm on your computer, do your own research on how to install and use [Node Version Manager (nvm)](https://github.com/nvm-sh/nvm).
 
- 2. If you're using MacOS or Windows, use one of the installers from the Node.js download page.  
+ 2. If you're using macOS or Windows, use one of the installers from the Node.js download page.  
     Open <https://nodejs.org/en/download/> then download the latest version of the Node.js installable archive file.  
     Be sure to install the version labeled long-term support (**LTS**).  
-    (As of Sep 22, 2021, the latest Node.js LTS version is 14.17.6 which includes NPM 6.14.15)  
+    (As of Sep 22, 2021, the latest Node.js LTS version is 14.17.6 which includes npm 6.14.15)
 
     ![nodejs_download_page](/assets/images/node/nodejs_download_page.png)
 
@@ -51,15 +51,15 @@ nav_order: 3
 
     ![installing_win](/assets/images/node/installing_win.png)
 
-    ↑Windows, ↓MacOS
+    ↑Windows, ↓macOS
 
     ![installing_mac](/assets/images/node/installing_mac.png)
 
  4. Please re-execute [Section 1](#section-1-checking-your-version-of-npm-and-nodejs) to verify the installation was successful.
 
-# Section 3: Upgrading NPM
+# Section 3: Upgrading npm
 
-Since the npm that comes with the node.js installation package is not necessarily the latest, please update npm manually.
+Since the npm that comes with the Node.js installation package is not necessarily the latest, please update npm manually.
 
 ## 3.1: Upgrading on *nix (OSX, Linux, etc.)
 

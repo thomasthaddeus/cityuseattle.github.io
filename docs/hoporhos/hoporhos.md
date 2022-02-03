@@ -7,8 +7,4 @@ permalink: docs/hoporhos
 ---
 
 # HOP, HOS and TT
-
-{: .no_toc .text-delta }
-
----
-
+{: .no_toc }

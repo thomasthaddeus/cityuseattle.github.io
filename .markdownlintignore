@@ -1,0 +1,4 @@
+
+# There are a lot of places where the homepage does not conform to the Markdown style guide for the sake of beauty.
+# Also, don't want to build extra rules for index.md.
+/index.md

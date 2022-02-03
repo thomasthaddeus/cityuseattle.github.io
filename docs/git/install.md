@@ -6,7 +6,6 @@ nav_order: 2
 ---
 
 
-
 {: .no_toc }
 
 ## Table of contents
@@ -18,31 +17,25 @@ nav_order: 2
 ---
 
 
-# Install git on MacOS
+# Install Git on macOS
 
-* [Section 1: Checking your version of Git](#section-1-checking-your-version-of-git)
-* [Section 2: Using brew package manager to install Git](#section-2-using-brew-package-manager-to-install-git)
-* [Section 3: First-time Git setup](#section-3-first-time-git-setup)
-
----
-
-### Section 1: Checking your version of Git
+## Section 1: Checking your version of Git
 
  1. Open a new Terminal to type and run the following command to see if you already have Git installed. This will also check the installed version:
 
-   ```shell
-   $ git --version
-   ```
+    ```shell
+    $ git --version
+    ```
 
-   ![git_version_output](/assets/images/git_version_output.png)
+    ![git_version_output](/assets/images/git_version_output.png)
 
  2. If you got an error and Git is not recognized by your machine, then follow [Section 2](#section-2-using-brew-package-manager-to-install-git) to install it.
 
-### Section 2: Using brew package manager to install Git
+## Section 2: Using brew package manager to install Git
 
  1. There are several options for installing Git on macOS. Note that any non-source distributions are provided by third parties and may not be up to date with the latest source release.  
-   In this tutorial, we will use homebrew, a package manager in macOS, to install Git. If you don't like to use homebrew, you can follow <https://git-scm.com/download/mac> to install Git in another way.  
-   Note: if you encounter problems while installing Git using another way, the TA may not be able to help solve your problem.
+    In this tutorial, we will use homebrew, a package manager in macOS, to install Git. If you don't like to use homebrew, you can follow <https://git-scm.com/download/mac> to install Git in another way.  
+    Note: if you encounter problems while installing Git using another way, the TA may not be able to help solve your problem.
 
  2. Follow the steps in the link <https://sourabhbajaj.com/mac-setup/Homebrew/> to install homebrew if you don't already have it. For more information about what brew can do, visit the following link <https://brew.sh/>
 
@@ -70,7 +63,7 @@ nav_order: 2
 
  7. Please re-execute [Section 1](#section-1-checking-your-version-of-git) to verify the installation is successful.
 
-### Section 3: First-time Git setup
+## Section 3: First-time Git setup
 
  1. **First of all**, if you encounter any problems in this section, please read the official GitHub tutorial first, which can solve most of your problems. <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
 
@@ -82,7 +75,7 @@ nav_order: 2
     $ git config --global user.email <email>
     ```
 
-    If you want to know more about the git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
+    If you want to know more about the Git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
 
  3. Enter `ls -al ~/.ssh` to see if any SSH keys are present:
 
@@ -167,10 +160,9 @@ nav_order: 2
 13. Verify that the resulting message contains your GitHub username. If you receive a "permission denied" message, see "[Error: Permission denied (publickey)](https://docs.github.com/en/articles/error-permission-denied-publickey)".
 
 
+# Install Git on Windows
 
-# Install git on Windows
-
-### Section 1: Installing Git for Windows
+## Section 1: Installing Git for Windows
 
  1. Visit <https://git-scm.com/download/win> and click on "Git for Windows Setup."
 
@@ -190,13 +182,13 @@ nav_order: 2
 
     ![path_env](/assets/images/path_env.png)
 
- 6. For the rest of the installation, choose the default options. 
+ 6. For the rest of the installation, choose the default options.
 
  7. Uncheck "View Release Notes" because we do not need it.
 
     ![install_completing](/assets/images/install_completing.png)
 
-### Section 2: Testing the Git installation
+## Section 2: Testing the Git installation
 
 Once the installation is completed, open the cmd
 
@@ -204,11 +196,11 @@ Once the installation is completed, open the cmd
 
     ![win_search](/assets/images/win_search.png)
 
- 2. In the cmd window, type git --version. You should see git version 2.27.0 or greater.
+ 2. In the cmd window, type `git --version`. You should see Git version 2.27.0 or greater.
 
     ![git_version_output](/assets/images/git_version_output.png)
 
- 3. **_Note: If you got the following error_**
+ 3. ***Note: If you got the following error***
 
     ![git_path_env_error](/assets/images/git_path_env_error.png)
 
@@ -237,7 +229,7 @@ Once the installation is completed, open the cmd
 
  9. **Close the cmd window**, then open it one more time and type `git --version` to make sure that Git installed successfully.
 
-### Section 3: First-time Git setup
+## Section 3: First-time Git setup
 
  1. **First of all**, if you encounter any problems in this section, please read the official GitHub tutorial first, which can solve most of your problems. <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
 
@@ -249,7 +241,7 @@ Once the installation is completed, open the cmd
     $ git config --global user.email <email>
     ```
 
-    If you want to know more about the git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
+    If you want to know more about the Git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
 
  3. Enter `ls -al ~/.ssh` to see if any SSH keys are present:
 

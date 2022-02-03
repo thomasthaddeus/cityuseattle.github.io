@@ -8,6 +8,3 @@ permalink: docs/tools
 
 # Tools
 {: .no_toc }
-
-
-{: .fs-6 .fw-300 }

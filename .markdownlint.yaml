@@ -1,0 +1,50 @@
+
+blanks-around-headers:
+  lines_below: 0
+single-title: false
+no-inline-html:
+  allowed_elements: [p, img, a]
+line-length: false
+commands-show-output: false
+no-duplicate-header:
+  siblings_only: true
+ul-style:
+  style: asterisk
+ol-prefix:
+  style: ordered
+no-multiple-blanks:
+  maximum: 2
+no-hard-tabs:
+  code_blocks: false
+code-fence-style:
+  style: backtick
+
+proper-names:
+  code_blocks: false
+  names: [
+    Python, Ruby,
+    R, C,
+    C++, Rust, Objective-C, Swift,
+    JavaScript, ECMAScript, ES6, ES2015,
+    JSON, YAML, XML, XHTML, HTML, HTML5,
+    Angular, AngularJS, Angular CLI, React, React.js, ReactJS,
+    DOM, WebGL, OpenGL, OpenGL ES, GLSL, HLSL, Direct3D, DirectX,
+    Node.js, npm, nvm,
+    SQL, SQL Server, SQLite, MongoDB, Mongoose,
+    Microsoft, Google, Amazon, Amazon Web Services, AWS,
+    Visual Studio Code, VS Code, Visual Studio, IDE,
+    Keil, IDA,
+    VirtualBox, VMware, Hyper-V,
+    OS, UNIX, POSIX, Kali, Debian, Ubuntu, Linux, GNU,
+    Windows, Mac, OS X, macOS, Android, iOS, iPad, iPadOS,
+    Markdown, kramdown,
+    PuTTY, Telnet,
+    HTTPS, HTTP, SSH, SSL, TLS,
+    PowerShell,
+    Docker,
+    API, APIs,
+    AI, CNN, RNN, LSTM, GRU,
+    MIT, GPL, Apache License, Apache, Nginx,
+    CC BY-SA, Creative Commons Attribution-ShareAlike, Attribution-ShareAlike,
+    Git, GitHub, GitHub Pages, GitHub Desktop,
+  ]
