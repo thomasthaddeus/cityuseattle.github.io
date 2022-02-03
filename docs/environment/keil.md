@@ -85,9 +85,9 @@ The following steps will demonstrate how to install the packages you need throug
 
 # FAQs
 
-## error: L6050U The code size
+## error: L6050U: The code size
 
-Refer to section [Limit](#limit).
+See section [Limit](#limit).
 
 ## How can I see the output in the simulator?
 
@@ -119,6 +119,10 @@ Refer to section [Limit](#limit).
 
 Click on `Options for Target...`. Select `Linker`, click the ellipsis (`...`) next to `Scatter File`, navigate to `.\RTE\Device\[the device you are currently using]\` in your current project directory, there is a file of type `.sct`, select it. If not, please contact your TA to find other solutions.
 
+## warning: long long is incompatible with C++98
+
+If you meet with `warning: long long is incompatible with C++98` issue, please check this link <https://www.keil.com/support/man/docs/armcc/armcc_chr1359124956849.htm> and try to solve it. **Please note that debugging is an important skill. Writing code is the easiest part of software development.**
+
 # Limit
 
 Since we are downloading the free Keil Lite version of the MDK, there are limitations. A full list of limitations can be found [here](https://www2.keil.com/mdk5/selector).
@@ -129,7 +133,7 @@ Since we are downloading the free Keil Lite version of the MDK, there are limita
 
   ![lite_linker_limit](/assets/images/install_keil/lite_linker_limit.png)
 
-  There is no solution to this error. But in general, C++ will use more space than C, you can try to use C code.
+  There is no solution to this error. But in general, **C++ will use more space than C, you can try to use C code.**
 
 * The full current device support list is [here](https://www.keil.com/dd2/), and the full legacy device list is [here](https://www.keil.com/dd/). But if you can't find chips of ARM Cortex-A series, ARM SecurCore®, ARM Cortex-R series, in the device list, it is due to the limitation of the free version.
 
