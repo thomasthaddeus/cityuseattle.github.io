@@ -5,6 +5,13 @@
   }
 }
 
+.search-input {
+  color: $body-text-color;
+}
+.search-result-doc.search-result-doc-parent {
+  opacity: 0.75;
+}
+
 .main {
   overflow-y: auto;
   scrollbar-width: none;  // Firefox
@@ -14,6 +21,11 @@
   }
 }
 
+// TODO:
+// * The position and style conflict with the search button. Solution:
+//   * Determine whether the button exists according to site.search.button. Change the location if it exists.
+//   * The style remains current or consistent with the search button.
+// * Add some transform animations to enhance the user experience.
 #back-to-top {
   position: fixed;
   z-index: 999999999;
