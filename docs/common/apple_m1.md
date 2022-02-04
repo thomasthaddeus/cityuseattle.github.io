@@ -12,6 +12,6 @@ To check if you're using Apple Silicon, follow the instructions below.
 * Click the Apple icon in the top-left corner.
 * Click "About this Mac"
 
-![applem1](/assets/images/apple/applem1.png)
+![applem1](/assets/images/common/apple_m1/applem1.png)
 
 If the Chip is "Apple M1", that means you're using Apple Silicon.

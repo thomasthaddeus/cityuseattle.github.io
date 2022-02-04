@@ -27,7 +27,7 @@ nav_order: 2
     $ git --version
     ```
 
-    ![git_version_output](/assets/images/git_version_output.png)
+    ![git_version_output](/assets/images/git/install/git_version_output.png)
 
  2. If you got an error and Git is not recognized by your machine, then follow [Section 2](#section-2-using-brew-package-manager-to-install-git) to install it.
 
@@ -45,15 +45,15 @@ nav_order: 2
     $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
     ```
 
-    ![install_brew_output](/assets/images/install_brew_output.png)
+    ![install_brew_output](/assets/images/git/install/install_brew_output.png)
 
  4. If it asks you to press RETURN to continue, then press the RETURN/Enter button.
 
-    ![installing_brew_output](/assets/images/installing_brew_output.png)
+    ![installing_brew_output](/assets/images/git/install/installing_brew_output.png)
 
  5. Then choose **Install**
 
-    ![xcode_command](/assets/images/xcode_command.png)
+    ![xcode_command](/assets/images/git/install/xcode_command.png)
 
  6. After the installation is done, type the following in the terminal to install Git
 
@@ -125,21 +125,21 @@ nav_order: 2
 
  6. Open the GitHub website. In the upper-right corner of any GitHub page, click your profile photo, then click **Settings**.
 
-    ![github_settings_dropdown_menu](/assets/images/github_settings_dropdown_menu.png)
+    ![github_settings_dropdown_menu](/assets/images/git/install/github_settings_dropdown_menu.png)
 
  7. Then select the "*SSH and GPG keys*" section along the left-hand side. From there, click the "*New SSH key*" button.
 
-    ![github_ssh_setting_page](/assets/images/github_ssh_setting_page.png)
+    ![github_ssh_setting_page](/assets/images/git/install/github_ssh_setting_page.png)
 
  8. In the "*Title*" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
 
  9. Paste the contents of your `~./ssh/id_ed25519.pub` (or `~/.ssh/id_rsa.pub`) public-key file into the "*Key*" field and click "*Add key*".
 
-    ![github_add_ssh_key](/assets/images/github_add_ssh_key.png)
+    ![github_add_ssh_key](/assets/images/git/install/github_add_ssh_key.png)
 
 10. If prompted, confirm your GitHub password.
 
-    ![github_confirm_pw](/assets/images/github_confirm_pw.png)
+    ![github_confirm_pw](/assets/images/git/install/github_confirm_pw.png)
 
 11. To test your SSH connection, enter the following in your terminal:
 
@@ -166,27 +166,27 @@ nav_order: 2
 
  1. Visit <https://git-scm.com/download/win> and click on "Git for Windows Setup."
 
-    ![git_downloads_page](/assets/images/git_downloads_page.png)
+    ![git_downloads_page](/assets/images/git/install/git_downloads_page.png)
 
  2. Open the file that was downloaded.
 
  3. Choose yes to allow the Git installation on your PC.
 
-    ![user_account_control](/assets/images/user_account_control.png)
+    ![user_account_control](/assets/images/git/install/user_account_control.png)
 
  4. Go through the installation and choose the default options.
 
-    ![install_license](/assets/images/install_license.png)
+    ![install_license](/assets/images/git/install/install_license.png)
 
  5. For this step, we will choose the last option to give us extra commands to use.
 
-    ![path_env](/assets/images/path_env.png)
+    ![path_env](/assets/images/git/install/path_env.png)
 
  6. For the rest of the installation, choose the default options.
 
  7. Uncheck "View Release Notes" because we do not need it.
 
-    ![install_completing](/assets/images/install_completing.png)
+    ![install_completing](/assets/images/git/install/install_completing.png)
 
 ## Section 2: Testing the Git installation
 
@@ -194,38 +194,38 @@ Once the installation is completed, open the cmd
 
  1. In the search bar, type cmd and choose Command Prompt.
 
-    ![win_search](/assets/images/win_search.png)
+    ![win_search](/assets/images/git/install/win_search.png)
 
  2. In the cmd window, type `git --version`. You should see Git version 2.27.0 or greater.
 
-    ![git_version_output](/assets/images/git_version_output.png)
+    ![git_version_output](/assets/images/git/install/git_version_output.png)
 
  3. ***Note: If you got the following error***
 
-    ![git_path_env_error](/assets/images/git_path_env_error.png)
+    ![git_path_env_error](/assets/images/git/install/git_path_env_error.png)
 
     **Then**, you need to add the PATH of Git into the Environment Variables
 
  4. In the cmd window, type "`where git`"
 
-    ![where_git_output](/assets/images/where_git_output.png)
+    ![where_git_output](/assets/images/git/install/where_git_output.png)
 
  5. Copy the first line and add it to the environment variables.  
     To open the environment variables in the search bar, type environment variables and choose Edit system environment variables.
 
-    ![sys_path_env_editer_search](/assets/images/sys_path_env_editer_search.png)
+    ![sys_path_env_editer_search](/assets/images/git/install/sys_path_env_editer_search.png)
 
  6. Choose Environment Variables.
 
-    ![sys_properties](/assets/images/sys_properties.png)
+    ![sys_properties](/assets/images/git/install/sys_properties.png)
 
  7. In the System Variables, choose Path, then select the Edit Button.
 
-    ![env_var_page](/assets/images/env_var_page.png)
+    ![env_var_page](/assets/images/git/install/env_var_page.png)
 
  8. Choose New, then Paste the Git location that you copied from the cmd window.
 
-    ![add_new_path_env_var](/assets/images/add_new_path_env_var.png)
+    ![add_new_path_env_var](/assets/images/git/install/add_new_path_env_var.png)
 
  9. **Close the cmd window**, then open it one more time and type `git --version` to make sure that Git installed successfully.
 
@@ -291,21 +291,21 @@ Once the installation is completed, open the cmd
 
  6. Open the GitHub website. In the upper-right corner of any GitHub page, click your profile photo, then click **Settings**.
 
-    ![github_settings_dropdown_menu](/assets/images/github_settings_dropdown_menu.png)
+    ![github_settings_dropdown_menu](/assets/images/git/install/github_settings_dropdown_menu.png)
 
  7. Then select the "*SSH and GPG keys*" section along the left-hand side. From there, click the "*New SSH key*" button.
 
-    ![github_ssh_setting_page](/assets/images/github_ssh_setting_page.png)
+    ![github_ssh_setting_page](/assets/images/git/install/github_ssh_setting_page.png)
 
  8. In the "*Title*" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
 
  9. Paste the contents of your `~./ssh/id_ed25519.pub` (or `~/.ssh/id_rsa.pub`) public-key file into the "*Key*" field and click "*Add key*".
 
-    ![github_add_ssh_key](/assets/images/github_add_ssh_key.png)
+    ![github_add_ssh_key](/assets/images/git/install/github_add_ssh_key.png)
 
 10. If prompted, confirm your GitHub password.
 
-    ![github_confirm_pw](/assets/images/github_confirm_pw.png)
+    ![github_confirm_pw](/assets/images/git/install/github_confirm_pw.png)
 
 11. To test your SSH connection, enter the following in your terminal:
 

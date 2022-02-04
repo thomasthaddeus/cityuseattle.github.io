@@ -15,7 +15,7 @@ nav_order: 2
 
 ---
 
-<p align="center"><img alt="python_logo" src="/assets/images/python/python_logo.png" width="140"/></p>
+<p align="center"><img alt="python_logo" src="/assets/images/environment/python/python_logo.png" width="140"/></p>
 
 # Install Python on macOS
 
@@ -27,7 +27,7 @@ We will use Python 3 which is the latest Python version. If you have already ins
 
  2. Click the downloading link based on the operating system you are using:
 
-    ![python_download_page](/assets/images/python/python_download_page.png)
+    ![python_download_page](/assets/images/environment/python/python_download_page.png)
 
     Note: While creating this document the latest version was 3.7.4. You might see an advanced version. Download the latest version.
 
@@ -41,7 +41,7 @@ We will use Python 3 which is the latest Python version. If you have already ins
     $ python3 --version
     ```
 
-    ![python_version_output](/assets/images/python/python_version_output.png)
+    ![python_version_output](/assets/images/environment/python/python_version_output.png)
 
     Note: you are supposed to see the Python version (it may be slightly different from the version shown here, but it should be 3.x.x).
 
@@ -49,10 +49,10 @@ We will use Python 3 which is the latest Python version. If you have already ins
 
     Click on View -> Extension in the VS Code menu
 
-    ![vscode_view_dropdown_menu](/assets/images/python/vscode_view_dropdown_menu.png)
+    ![vscode_view_dropdown_menu](/assets/images/environment/python/vscode_view_dropdown_menu.png)
 
     Search Python and click the install button on the right
-    ![ext_search_result](/assets/images/python/ext_search_result.png)
+    ![ext_search_result](/assets/images/environment/python/ext_search_result.png)
 
 # Install Python on Windows
 

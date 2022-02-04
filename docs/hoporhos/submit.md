@@ -51,8 +51,8 @@ To github.com:cityuseattle/IS440-HOP06-Fall-2021.git
 
 After you finish your HOP, HOS, or TT, you can see all changes on GitHub Desktop. For example, if you finish your work on week 6 and want to submit or push it to GitHub, you can type a summary and then commit it to the main branch.
 
-![GitHub-desktop-commit](/assets/images/github-desktop-commit.png)
+![GitHub-desktop-commit](/assets/images/hoporhos/submit/github-desktop-commit.png)
 
 So far, you have committed changes to your local branch. The remote branch has not been changed. You need to push it to remote branch so that everyone can see your work, particularly your TA.
 
-![GitHub-desktop-push](/assets/images/github-desktop-push.png)
+![GitHub-desktop-push](/assets/images/hoporhos/submit/github-desktop-push.png)

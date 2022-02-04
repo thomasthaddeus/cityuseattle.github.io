@@ -15,7 +15,7 @@ nav_order: 3
 
 ---
 
-<p align="center"><img alt="nodejs_npm_logo" src="/assets/images/node/nodejs_npm_logo.png"/></p>
+<p align="center"><img alt="nodejs_npm_logo" src="/assets/images/environment/nodejs/nodejs_npm_logo.png"/></p>
 
 # Resources
 
@@ -45,15 +45,15 @@ nav_order: 3
     Be sure to install the version labeled long-term support (**LTS**).  
     (As of Sep 22, 2021, the latest Node.js LTS version is 14.17.6 which includes npm 6.14.15)
 
-    ![nodejs_download_page](/assets/images/node/nodejs_download_page.png)
+    ![nodejs_download_page](/assets/images/environment/nodejs/nodejs_download_page.png)
 
  3. Install Node.js
 
-    ![installing_win](/assets/images/node/installing_win.png)
+    ![installing_win](/assets/images/environment/nodejs/installing_win.png)
 
     ↑Windows, ↓macOS
 
-    ![installing_mac](/assets/images/node/installing_mac.png)
+    ![installing_mac](/assets/images/environment/nodejs/installing_mac.png)
 
  4. Please re-execute [Section 1](#section-1-checking-your-version-of-npm-and-nodejs) to verify the installation was successful.
 

@@ -23,19 +23,19 @@ parent: Tools
 
 1. Visit <https://code.visualstudio.com/Download/> and click on the VS Code macOS version to download it.
 
-   ![vscode_page](/assets/images/vscode/VScode_download_page.png)
+   ![vscode_page](/assets/images/tools/vscode/VScode_download_page.png)
 
 2. After the downloading is done, double click the zip file.
 
-   ![vscode_page](/assets/images/vscode/vscode_mac_package.png)
+   ![vscode_page](/assets/images/tools/vscode/vscode_mac_package.png)
 
 3. You will see "Visual Studio Code.app". Drag it to Application folder.
 
-   ![vscode_page](/assets/images/vscode/vscode_mac_install.png)
+   ![vscode_page](/assets/images/tools/vscode/vscode_mac_install.png)
 
 4. Now you have installed VS Code on your Mac. Find it in your launchpad.
 
-   ![vscode_page](/assets/images/vscode/vscode_mac_home.png)
+   ![vscode_page](/assets/images/tools/vscode/vscode_mac_home.png)
 
 5. Open this [link](https://code.visualstudio.com/docs/?dv=osx) to learn how to use VS Code.
 
@@ -43,20 +43,20 @@ parent: Tools
 
 1. Visit <https://code.visualstudio.com/Download/>
 
-   ![vscode_page](/assets/images/vscode/vscode_page.png)
+   ![vscode_page](/assets/images/tools/vscode/vscode_page.png)
 
 2. Select a correct version for your operating system and download it.  
    For example, you can download Windows x64 for your Windows 10.  
    (As of 1/27/2022, you can download "VSCodeUserSetup-x64-1.63.1.exe")
 
-   ![vscode_download_btn_clicked](/assets/images/vscode/vscode_download_btn_clicked.png)
+   ![vscode_download_btn_clicked](/assets/images/tools/vscode/vscode_download_btn_clicked.png)
 
 3. Install VS Code.
 
-   ![vscode_page](/assets/images/vscode/setup_vscode.png)
-   ![vscode_page](/assets/images/vscode/completing_setup_vscode.png)
+   ![vscode_page](/assets/images/tools/vscode/setup_vscode.png)
+   ![vscode_page](/assets/images/tools/vscode/completing_setup_vscode.png)
 
-   ![vscode_ui](/assets/images/vscode/vscode_ui.png)
+   ![vscode_ui](/assets/images/tools/vscode/vscode_ui.png)
 
 4. Open the [link](https://code.visualstudio.com/docs/) to learn how to use VS Code.
 

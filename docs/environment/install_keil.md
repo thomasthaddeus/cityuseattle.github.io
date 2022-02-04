@@ -8,7 +8,7 @@ nav_order: 4
 # Install Keil µVision 5 ARMs assembly IDE
 {: .no_toc }
 
-<p align="center"><img alt="keil_logo" src="/assets/images/install_keil/keil_logo.png"/></p>
+<p align="center"><img alt="keil_logo" src="/assets/images/environment/install_keil/keil_logo.png"/></p>
 
 ## Before You Start
 {: .no_toc }
@@ -33,25 +33,25 @@ Unfortunately, Keil® MDK is not available for Mac devices at the time of creati
 
 Keil® Microcontroller Development Kit (MDK) is the most comprehensive software development solution for Arm®-based microcontrollers and includes all components that you need to create, build, and debug embedded applications. Additional information can be found in the official website [here](https://www2.keil.com/mdk5/uvision/). This software is provided by ARM. To download the Development Kit, browse [here](https://www2.keil.com/mdk5/) and click on the `Download MDK`. You will be required to fill in the form and follow the instructions to install the latest version of Keil µVision as shown below:
 
-![keil_download_page](/assets/images/install_keil/keil_download_page.png)
+![keil_download_page](/assets/images/environment/install_keil/keil_download_page.png)
 
 > Keil will collect user data during the download and installation process, please fill in as you like.
 
-![keil_install_process_path](/assets/images/install_keil/keil_install_process_path.png)
+![keil_install_process_path](/assets/images/environment/install_keil/keil_install_process_path.png)
 
 > In the `Do you want to install this device software?` dialog box that pops up during the installation process, please check the `Always trust software from "ARM Ltd" (A).` option, and click `Install`.
 
 When you finish the installation, Keil's Pack Installer will pop up automatically. Please wait for all loading/upgrades at the bottom of the page to complete. When there is no progress bar or Ready is displayed, you can close the window.
 
-![keil_pack_installer_updating](/assets/images/install_keil/keil_pack_installer_updating.png)
+![keil_pack_installer_updating](/assets/images/environment/install_keil/keil_pack_installer_updating.png)
 
-![keil_pack_installer_ready](/assets/images/install_keil/keil_pack_installer_ready.png)
+![keil_pack_installer_ready](/assets/images/environment/install_keil/keil_pack_installer_ready.png)
 
 If you have successfully installed Keil, running Keil will have the following display.
 
-![keil_start_page](/assets/images/install_keil/keil_start_page.png)
+![keil_start_page](/assets/images/environment/install_keil/keil_start_page.png)
 
-![keil_default_editor](/assets/images/install_keil/keil_default_editor.png)
+![keil_default_editor](/assets/images/environment/install_keil/keil_default_editor.png)
 
 # Install the Pack You Need
 
@@ -61,27 +61,27 @@ The following steps will demonstrate how to install the packages you need throug
 
      1. Open Keil and find and click the `Pack Installer` button in the main interface.
 
-        ![keil_pack_installer_btn](/assets/images/install_keil/keil_pack_installer_btn.png)
+        ![keil_pack_installer_btn](/assets/images/environment/install_keil/keil_pack_installer_btn.png)
 
      2. Find Keil_v5 installation path. Usually in the path `C:/Keil_v5/UV4/`.
 
-        ![keil_v5_path](/assets/images/install_keil/keil_v5_path.png)
+        ![keil_v5_path](/assets/images/environment/install_keil/keil_v5_path.png)
 
         Open `PackInstaller.exe`.
 
-        ![open_pack_installer](/assets/images/install_keil/open_pack_installer.png)
+        ![open_pack_installer](/assets/images/environment/install_keil/open_pack_installer.png)
 
  2. Waiting.
 
-    ![keil_pack_installer_loading](/assets/images/install_keil/keil_pack_installer_loading.png)
+    ![keil_pack_installer_loading](/assets/images/environment/install_keil/keil_pack_installer_loading.png)
 
  3. Search the pack you need. Here use `STM32F411` as an example.
 
-    ![search](/assets/images/install_keil/search.png)
+    ![search](/assets/images/environment/install_keil/search.png)
 
  4. Click `STM32F4 Series`, then install `Keil::STM32F4xx_DFP`.
 
-    ![install_pack](/assets/images/install_keil/install_pack.png)
+    ![install_pack](/assets/images/environment/install_keil/install_pack.png)
 
 # FAQs
 
@@ -93,27 +93,27 @@ See section [Limit](#limit).
 
  1. After you have created the project. Click on `Manage Run-Time Environment`.
 
-    ![mrte_btn](/assets/images/install_keil/mrte_btn.png)
+    ![mrte_btn](/assets/images/environment/install_keil/mrte_btn.png)
 
  2. Expand and select `Compiler` > `I/O` > `STDOUT`, and change `Breakpoint` to `ITM`.
 
-    ![stdout_env](/assets/images/install_keil/stdout_env.png)
+    ![stdout_env](/assets/images/environment/install_keil/stdout_env.png)
 
  3. After successfully compiling the code, click `Start/Stop Debug Session`.
 
-    ![debug_session_btn](/assets/images/install_keil/debug_session_btn.png)
+    ![debug_session_btn](/assets/images/environment/install_keil/debug_session_btn.png)
 
  4. After entering the debug session, in the `View` above, find `Serial Windows`, and select `Debug (printf) Viewer`.
 
-    ![view_serial_win_debug_viewer](/assets/images/install_keil/view_serial_win_debug_viewer.png)
+    ![view_serial_win_debug_viewer](/assets/images/environment/install_keil/view_serial_win_debug_viewer.png)
 
  5. After completing the above operations, you can see that this `Debug (printf) Viewer` window appears in the lower right corner.
 
-    ![debug_viewer_win](/assets/images/install_keil/debug_viewer_win.png)
+    ![debug_viewer_win](/assets/images/environment/install_keil/debug_viewer_win.png)
 
  6. Execute your code and check the `Debug (printf) Viewer` window, if there is anything in the code that prints to stdout like `cout` or `printf`, it will be shown in this window.
 
-    ![debug_output_example](/assets/images/install_keil/debug_output_example.png)
+    ![debug_output_example](/assets/images/environment/install_keil/debug_output_example.png)
 
 ## Error: L6218E: Undefined symbol Image
 
@@ -131,7 +131,7 @@ Since we are downloading the free Keil Lite version of the MDK, there are limita
 
   `.\Objects\lite.axf: error: L6050U: The code size of this image (84902 bytes) exceeds the maximum allowed for this version of the linker.`
 
-  ![lite_linker_limit](/assets/images/install_keil/lite_linker_limit.png)
+  ![lite_linker_limit](/assets/images/environment/install_keil/lite_linker_limit.png)
 
   There is no solution to this error. But in general, **C++ will use more space than C, you can try to use C code.**
 
