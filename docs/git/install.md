@@ -34,34 +34,19 @@ nav_order: 2
 ## Section 2: Using brew package manager to install Git
 
  1. There are several options for installing Git on macOS. Note that any non-source distributions are provided by third parties and may not be up to date with the latest source release.  
-    In this tutorial, we will use homebrew, a package manager in macOS, to install Git. If you don't like to use homebrew, you can follow <https://git-scm.com/download/mac> to install Git in another way.  
+    In this tutorial, we will use Homebrew, a package manager in macOS, to install Git. If you don't like to use Homebrew, you can follow <https://git-scm.com/download/mac> to install Git in another way.  
     Note: if you encounter problems while installing Git using another way, the TA may not be able to help solve your problem.
 
- 2. Follow the steps in the link <https://sourabhbajaj.com/mac-setup/Homebrew/> to install homebrew if you don't already have it. For more information about what brew can do, visit the following link <https://brew.sh/>
+ 2. Follow the steps in the [tutorial]({{ site.baseurl }}{% link docs/tools/homebrew.md %}) to install Homebrew if you don't already have it. For more information about what Homebrew can do, visit the following link <https://brew.sh/>
 
- 3. Let us install Homebrew. Open the terminal and type the following
-
-    ```shell
-    $ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
-    ```
-
-    ![install_brew_output](/assets/images/git/install/install_brew_output.png)
-
- 4. If it asks you to press RETURN to continue, then press the RETURN/Enter button.
-
-    ![installing_brew_output](/assets/images/git/install/installing_brew_output.png)
-
- 5. Then choose **Install**
-
-    ![xcode_command](/assets/images/git/install/xcode_command.png)
-
- 6. After the installation is done, type the following in the terminal to install Git
+ 3. Once Homebrew is installed, type the following in the terminal to update Homebrew and install Git.
 
     ```shell
+    $ brew update
     $ brew install git
     ```
 
- 7. Please re-execute [Section 1](#section-1-checking-your-version-of-git) to verify the installation is successful.
+ 4. Please re-execute [Section 1](#section-1-checking-your-version-of-git) to verify the installation is successful.
 
 ## Section 3: First-time Git setup
 
