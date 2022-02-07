@@ -18,9 +18,15 @@ parent: Database
 * Version numbers may not match with the most current version at the time of writing. If given the option to choose between stable release (long-term support) or most recent, please select the **stable release** rather than the beta-testing version.
 * There might be subtle discrepancies along with the steps. Please **use your best judgment** while going through this cookbook-style tutorial to complete each step.
 
+# Detect if MongoDB is installed
+
+Open a terminal, if you don't know what a terminal is, read the tutorial [What's the Terminal?]({{ site.baseurl }}{% link docs/common/terminal_and_cmd.md %}). Enter the command `mongo` or `mongosh`.
+
+If you have MongoDB installed, you will enter the MongoDB shell. Press `Ctrl + C` (or `Command + C` in macOS) to exit the shell.
+
 # For Windows Users
 
-> This section is based on the [official MongoDB documentation](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/).
+> This section is based on the [official MongoDB documentation](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/). You can also watch [this video](https://www.youtube.com/watch?v=3wqzr-GJoS0) to install in Windows 10.
 
 This tutorial only applies to **64-bit versions** of Windows Server 2019 / Windows 10 / Windows Server 2016 on **x86_64 architecture**. For other Windows platforms, please do your personal research first, and if you really can't find a solution ask your TA to find a solution with you.
 
@@ -254,6 +260,6 @@ See the [MongoDB Database Tools Documentation][mongodb-database-tools-doc] for u
 
 
 [mongod]: <https://docs.mongodb.com/manual/reference/program/mongod> "Doc for mongod"
+[mongodb-database-tools-doc]: <https://docs.mongodb.com/database-tools/> "MongoDB Database Tools Documentation"
 [mongosh]: <https://docs.mongodb.com/mongodb-shell> "Doc for mongosh"
 [mongotop]: <https://docs.mongodb.com/database-tools/mongotop> "Doc for mongotop"
-[mongodb-database-tools-doc]: <https://docs.mongodb.com/database-tools/> "MongoDB Database Tools Documentation"
