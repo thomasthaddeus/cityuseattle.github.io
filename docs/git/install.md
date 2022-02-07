@@ -52,83 +52,46 @@ nav_order: 2
 
  1. **First of all**, if you encounter any problems in this section, please read the official GitHub tutorial first, which can solve most of your problems. <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
 
- 2. The first thing you should do when you install Git is set your username and email address. This is important because every Git commit uses this information, and it's immutably baked into the commits you start creating:  
-    Note: replace `<username>` to your GitHub username, and `<email>` to the email address you used to register GitHub.  
+ 2. The first thing you should do when you install Git is set your username and email address. This is important because every Git commit uses this information, and it's immutably baked into the commits you start creating:
 
     ```shell
     $ git config --global user.name "<username>"
     $ git config --global user.email <email>
     ```
 
-    If you want to know more about the Git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
+    > **Note:** replace `<username>` to your GitHub username, and `<email>` to the email address you used to register GitHub.
+    >
+    > If you want to know more about the Git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
 
- 3. Enter `ls -al ~/.ssh` to see if any SSH keys are present:
-
-    ```shell
-    $ ls -al ~/.ssh
-    # Lists the files in your .ssh directory if they exist
-    ```
-
-    Check the directory listing to see if you already have a public SSH key. By default, the filenames of the public keys are one of the following:
-
-    * id_rsa.pub
-    * id_ecdsa.pub
-    * id_ed25519.pub
-
- 4. If you don't have an existing public and private key pair, type the following command to generate a new SSH Key. Note: replace `<email>` to the email address you used to register GitHub.
+ 3. Please read [this tutorial]({{ site.baseurl }}{% link docs/common/gen_ssh_key.md %}) to generate SSH keys. Print the public key, then please select and copy the output.
 
     ```shell
-    $ ssh-keygen -t ed25519 -C "<email>"
+    $ cat ~/.ssh/id_<algorithm>.pub
     ```
 
-    Note: If you are using a legacy system that doesn't support the Ed25519 algorithm, use:
+    > Please replace `<algorithm>` with a specific algorithm, such as `rsa`, `ecdsa`, or `ed25519`. It depends on what algorithm you used to generate the SSH key.
 
-    ```shell
-    $ ssh-keygen -t rsa -b 4096 -C "<email>"
-    # Example output:
-    Generating public/private ed25519 key pair.
-    Enter file in which to save the key (/home/your mac username/.ssh/id_ed25519):  #  Please press Enter to keep the default save path.
-    Created directory '/home/your mac username/.ssh'.
-    Enter passphrase (empty for no passphrase):	# You can enter the password, but Git  will ask you to enter this password every time you connect to the remote server  (GitHub). If you choose to use a password, you can use ssh-agent to avoid  re-entering the password in a short time. If you are using your own computer, it  is recommended to keep it empty (press Enter directly).
-    Enter same passphrase again:
-    Your identification has been saved in /home/your mac username/.ssh/id_ed25519.
-    Your public key has been saved in /home/your mac username/.ssh/id_ed25519.pub.
-    The key fingerprint is:
-    ```
-
- 5. Print the id_rsa.pub, then please select and copy the output.
-
-    ```shell
-    $ cat ~/.ssh/id_ed25519.pub
-    ```
-
-    If you are using RSA algorithm, please type:
-
-    ```shell
-    $ cat ~/.ssh/id_rsa.pub
-    ```
-
- 6. Open the GitHub website. In the upper-right corner of any GitHub page, click your profile photo, then click **Settings**.
+ 4. Open the GitHub website. In the upper-right corner of any GitHub page, click your profile photo, then click **Settings**.
 
     ![github_settings_dropdown_menu](/assets/images/git/install/github_settings_dropdown_menu.png)
 
- 7. Then select the "*SSH and GPG keys*" section along the left-hand side. From there, click the "*New SSH key*" button.
+ 5. Then select the "*SSH and GPG keys*" section along the left-hand side. From there, click the "*New SSH key*" button.
 
     ![github_ssh_setting_page](/assets/images/git/install/github_ssh_setting_page.png)
 
- 8. In the "*Title*" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
+ 6. In the "*Title*" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
 
- 9. Paste the contents of your `~./ssh/id_ed25519.pub` (or `~/.ssh/id_rsa.pub`) public-key file into the "*Key*" field and click "*Add key*".
+ 7. Paste the contents of the public-key file you coped in this section step 3 into the "*Key*" field and click "*Add key*".
 
     ![github_add_ssh_key](/assets/images/git/install/github_add_ssh_key.png)
 
-10. If prompted, confirm your GitHub password.
+ 8. If prompted, confirm your GitHub password.
 
     ![github_confirm_pw](/assets/images/git/install/github_confirm_pw.png)
 
-11. To test your SSH connection, enter the following in your terminal:
+ 9. To test your SSH connection, enter the following in your terminal:
 
-    ```shell
+    ```console
     $ ssh -T git@github.com
     # You may see a warning like this:
     The authenticity of host 'github.com (IP ADDRESS)' can't be established.
@@ -136,13 +99,13 @@ nav_order: 2
     Are you sure you want to continue connecting (yes/no)?
     ```
 
-12. Verify that the fingerprint in the message you see matches [GitHub's RSA public key fingerprint](https://docs.github.com/en/github/authenticating-to-github/githubs-ssh-key-fingerprints). If it does, then type `yes` and press enter:
+10. Verify that the fingerprint in the message you see matches [GitHub's SSH key fingerprints](https://docs.github.com/en/github/authenticating-to-github/githubs-ssh-key-fingerprints). If it does, then type `yes` and press enter:
 
     ```text
     Hi your_GitHub_username! You've successfully authenticated, but GitHub does not provide shell access.
     ```
 
-13. Verify that the resulting message contains your GitHub username. If you receive a "permission denied" message, see "[Error: Permission denied (publickey)](https://docs.github.com/en/articles/error-permission-denied-publickey)".
+11. Verify that the resulting message contains your GitHub username. If you receive a "permission denied" message, see "[Error: Permission denied (publickey)](https://docs.github.com/en/articles/error-permission-denied-publickey)".
 
 
 # Install Git on Windows
@@ -218,83 +181,47 @@ Once the installation is completed, open the cmd
 
  1. **First of all**, if you encounter any problems in this section, please read the official GitHub tutorial first, which can solve most of your problems. <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
 
- 2. The first thing you should do when you install Git is set your username and email address. This is important because every Git commit uses this information, and it's immutably baked into the commits you start creating:  
-    Note: replace `<username>` to your GitHub username, and `<email>` to the email address you used to register GitHub.  
+ 2. Open the PowerShell or Git Bash. If you don't know what a terminal is, check out the tutorial [What's the Terminal?]({{ site.baseurl }}{% link docs/common/terminal_and_cmd.md %})  
+    The first thing you should do when you install Git is set your username and email address. This is important because every Git commit uses this information, and it's immutably baked into the commits you start creating:
 
     ```shell
     $ git config --global user.name "<username>"
     $ git config --global user.email <email>
     ```
 
-    If you want to know more about the Git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
+    > **Note:** replace `<username>` to your GitHub username, and `<email>` to the email address you used to register GitHub.
+    >
+    > If you want to know more about the Git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
 
- 3. Enter `ls -al ~/.ssh` to see if any SSH keys are present:
-
-    ```shell
-    $ ls -al ~/.ssh
-    # Lists the files in your .ssh directory if they exist
-    ```
-
-    Check the directory listing to see if you already have a public SSH key. By default, the filenames of the public keys are one of the following:
-
-    * id_rsa.pub
-    * id_ecdsa.pub
-    * id_ed25519.pub
-
- 4. If you don't have an existing public and private key pair, type the following command to generate a new SSH Key. Note: replace `<email>` with the email address you used to register GitHub.
+ 3. Please read [this tutorial]({{ site.baseurl }}{% link docs/common/gen_ssh_key.md %}) to generate SSH keys. Print the public key, then please select and copy the output.
 
     ```shell
-    $ ssh-keygen -t ed25519 -C "<email>"
+    $ cat ~/.ssh/id_<algorithm>.pub
     ```
 
-    Note: If you are using a legacy system that doesn't support the Ed25519 algorithm, use:
+    > Please replace `<algorithm>` with a specific algorithm, such as `rsa`, `ecdsa`, or `ed25519`. It depends on what algorithm you used to generate the SSH key.
 
-    ```shell
-    $ ssh-keygen -t rsa -b 4096 -C "<email>"
-    # Example output:
-    Generating public/private ed25519 key pair.
-    Enter file in which to save the key (/home/your mac username/.ssh/id_ed25519):  #  Please press Enter to keep the default save path.
-    Created directory '/home/your mac username/.ssh'.
-    Enter passphrase (empty for no passphrase):	# You can enter the password, but Git  will ask you to enter this password every time you connect to the remote server  (GitHub). If you choose to use a password, you can use ssh-agent to avoid  re-entering the password in a short time. If you are using your own computer, it  is recommended to keep it empty (press Enter directly).
-    Enter same passphrase again:
-    Your identification has been saved in /home/your mac username/.ssh/id_ed25519.
-    Your public key has been saved in /home/your mac username/.ssh/id_ed25519.pub.
-    The key fingerprint is:
-    ```
-
- 5. Print the id_rsa.pub, then please select and copy the output.
-
-    ```shell
-    $ cat ~/.ssh/id_ed25519.pub
-    ```
-
-    If you are using RSA algorithm, please type:
-
-    ```shell
-    $ cat ~/.ssh/id_rsa.pub
-    ```
-
- 6. Open the GitHub website. In the upper-right corner of any GitHub page, click your profile photo, then click **Settings**.
+ 4. Open the GitHub website. In the upper-right corner of any GitHub page, click your profile photo, then click **Settings**.
 
     ![github_settings_dropdown_menu](/assets/images/git/install/github_settings_dropdown_menu.png)
 
- 7. Then select the "*SSH and GPG keys*" section along the left-hand side. From there, click the "*New SSH key*" button.
+ 5. Then select the "*SSH and GPG keys*" section along the left-hand side. From there, click the "*New SSH key*" button.
 
     ![github_ssh_setting_page](/assets/images/git/install/github_ssh_setting_page.png)
 
- 8. In the "*Title*" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
+ 6. In the "*Title*" field, add a descriptive label for the new key. For example, if you're using a personal Mac, you might call this key "Personal MacBook Air".
 
- 9. Paste the contents of your `~./ssh/id_ed25519.pub` (or `~/.ssh/id_rsa.pub`) public-key file into the "*Key*" field and click "*Add key*".
+ 7. Paste the contents of the public-key file you coped in this section step 3 into the "*Key*" field and click "*Add key*".
 
     ![github_add_ssh_key](/assets/images/git/install/github_add_ssh_key.png)
 
-10. If prompted, confirm your GitHub password.
+ 8. If prompted, confirm your GitHub password.
 
     ![github_confirm_pw](/assets/images/git/install/github_confirm_pw.png)
 
-11. To test your SSH connection, enter the following in your terminal:
+ 9. To test your SSH connection, enter the following in your terminal:
 
-    ```shell
+    ```console
     $ ssh -T git@github.com
     # You may see a warning like this:
     The authenticity of host 'github.com (IP ADDRESS)' can't be established.
@@ -302,10 +229,10 @@ Once the installation is completed, open the cmd
     Are you sure you want to continue connecting (yes/no)?
     ```
 
-12. Verify that the fingerprint in the message you see matches [GitHub's RSA public key fingerprint](https://docs.github.com/en/github/authenticating-to-github/githubs-ssh-key-fingerprints). If it does, then type `yes` and press enter:
+10. Verify that the fingerprint in the message you see matches [GitHub's SSH key fingerprints](https://docs.github.com/en/github/authenticating-to-github/githubs-ssh-key-fingerprints). If it does, then type `yes` and press enter:
 
     ```text
     Hi your_GitHub_username! You've successfully authenticated, but GitHub does not provide shell access.
     ```
 
-13. Verify that the resulting message contains your GitHub username. If you receive a "permission denied" message, see "[Error: Permission denied (publickey)](https://docs.github.com/en/articles/error-permission-denied-publickey)".
+11. Verify that the resulting message contains your GitHub username. If you receive a "permission denied" message, see "[Error: Permission denied (publickey)](https://docs.github.com/en/articles/error-permission-denied-publickey)".

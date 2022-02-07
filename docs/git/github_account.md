@@ -2,6 +2,7 @@
 layout: default
 title: Create GitHub Account
 parent: Git
+nav_order: 1
 ---
 
 # Create an Account on GitHub
