@@ -24,6 +24,8 @@ Open a terminal, if you don't know what a terminal is, read the tutorial [What's
 
 If you have MongoDB installed, you will enter the MongoDB shell. Press `Ctrl + C` (or `Command + C` in macOS) to exit the shell.
 
+If you are using Windows, it is possible that the command execution failed because your environment variables were not configured correctly. Please check your File Explorer to see if the path `C:\Program Files\MongoDB\Server\5.0\bin\` exists. If exists, skip to the [Configure Environment Variables](#configure-environment-variables) section to configure your environment variables. If not, proceed to install following the tutorial.
+
 # For Windows Users
 
 > This section is based on the [official MongoDB documentation](https://docs.mongodb.com/manual/tutorial/install-mongodb-on-windows/). You can also watch [this video](https://www.youtube.com/watch?v=3wqzr-GJoS0) to install in Windows 10.
@@ -91,11 +93,63 @@ Follow these steps to install MongoDB Community Edition using the MongoDB Instal
 
         ![install_confirm](/assets/images/database/mongodb/install_confirm.png)
 
+     5. During the installation process, some prompts and related processing methods may appear as follows:
+
+         1. Just a reminder that you will need to restart your computer after the installation is complete, click **OK**.
+
+            ![reminder_restart](/assets/images/database/mongodb/reminder_restart.png)
+
+         2. This prompt may be that you have installed MongoDB and the MongoDB service is running. Here just check `Close the applications and attempt to restart them.`, then click **OK**.
+
+            ![files_in_use](/assets/images/database/mongodb/files_in_use.png)
+
+         3. This prompts you to reboot. Please click **Yes** to restart your computer after making sure your other work (e.g. Word document, code being edited) is saved.
+
+            ![restart_confirm](/assets/images/database/mongodb/restart_confirm.png)
+
+## Configure Environment Variables
+
+Once installed, open a new terminal and run `mongo` again. If you get an error like the one below, it means you didn't set the environment variable.
+
+```console
+# cmd
+'mongo' is not recognized as an internal or external command,
+operable program or batch file.
+# PowerShell
+mongo : The term 'mongo' is not recognized as the name of a cmdlet, function, script file, or operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+# Git Bash
+bash: mongo: command not found
+# Z shell
+zsh: command not found: mongo
+```
+
+Follow [this tutorial]({{ site.baseurl }}{% link docs/common/environment_variable.md %}) to add a `C:\Program Files\MongoDB\Server\5.0\bin\` value to your `PATH` environment variable.
+
+![win_env_var](/assets/images/database/mongodb/win_env_var.png)
+
+After you set the `PATH` environment variable, please open a new terminal, and run `mongo` again. If you did all the steps correctly, you can enter the MongoDB shell.
+
 ## Install Tools
 
 ### Install `mongosh`
 
-The `.msi` installer does not include [mongosh][]. Follow the [mongosh installation instructions](https://docs.mongodb.com/mongodb-shell/install/) to download and install the shell separately.
+> This section is based on the [official MongoDB documentation](https://docs.mongodb.com/mongodb-shell/install/)
+
+The `.msi` installer does not include [mongosh][].
+
+ 1. Open the MongoDB Shell download page: [MongoDB Download Center](https://www.mongodb.com/try/download/shell?jmp=docs)
+
+     1. In the **Platform** dropdown, select `Windows 64-bit (8.1+)` (The first option, without the `(MSI)` suffix).
+     2. Make sure the **Package** item shows `zip` and not `msi`.
+     3. Click **Download**.
+
+    ![mongosh_download](/assets/images/database/mongodb/mongosh_download.png)
+
+ 2. Once the download is complete, open or extracts the zip archive. Extract the two executable files (`.exe`) in `mongosh-***/bin/` in the zip file to the `bin` directory of the MongoDB installation directory, which is located in `C:\Program Files\MongoDB\Server\5.0\bin\` by default.
+
+    ![mongosh_unzip](/assets/images/database/mongodb/mongosh_unzip.png)
+
+ 3. Open a new terminal and run `mongosh`. Open a new terminal and run mongosh. If you did all the steps correctly, you can enter the MongoDB shell.
 
 ### Install MongoDB Database Tools
 
@@ -103,7 +157,7 @@ The `.msi` installer does not include [mongosh][]. Follow the [mongosh installat
 
 The MongoDB Database Tools are a collection of command-line utilities for working with a MongoDB deployment. The Database Tools include binaries `mongodump`, `mongorestore`, `bsondump`, `mongoimport`, `mongoexport`, `mongostat`, `mongotop`, and `mongofiles`.
 
-If you are missing these tools, please refer to [here](https://docs.mongodb.com/database-tools/installation/installation-windows/) to install them. It is recommended to use the **Zip Archive** method to install, put the files in the `bin` folder in the compressed package into the MongoDB installation path, which is located in `C:\Program Files\MongoDB\Server\5.0\bin\` by default.
+If you are missing these tools, please refer to [here](https://docs.mongodb.com/database-tools/installation/installation-windows/) to install them. Please use the **Zip Archive** method to install, put the files in the `bin` folder in the zip archive into the `bin` directory in the MongoDB installation path, which is located in `C:\Program Files\MongoDB\Server\5.0\bin\` by default.
 
 ![install_db_tools_zip_archive](/assets/images/database/mongodb/install_db_tools_zip_archive.png)
 
