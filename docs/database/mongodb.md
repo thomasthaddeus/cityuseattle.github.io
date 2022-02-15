@@ -109,7 +109,7 @@ Follow these steps to install MongoDB Community Edition using the MongoDB Instal
 
 ## Configure Environment Variables
 
-Once installed, open a new terminal and run `mongo` again. If you get an error like the one below, it means you didn't set the environment variable.
+Once installed, open a new terminal and run `mongo` again. If you get an error like the one below, it means you didn't set the environment variable. To exit `mongo`, press `Ctrl` + `C`.
 
 ```console
 # cmd
@@ -149,7 +149,7 @@ The `.msi` installer does not include [mongosh][].
 
     ![mongosh_unzip](/assets/images/database/mongodb/mongosh_unzip.png)
 
- 3. Open a new terminal and run `mongosh`. Open a new terminal and run mongosh. If you did all the steps correctly, you can enter the MongoDB shell.
+ 3. Open a new terminal and run `mongosh`. Open a new terminal and run mongosh. If you did all the steps correctly, you can enter the MongoDB shell. To exit the `mongosh`, press `Ctrl` + `C` twice.
 
 ### Install MongoDB Database Tools
 
