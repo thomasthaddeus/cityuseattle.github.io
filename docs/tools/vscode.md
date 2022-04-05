@@ -17,7 +17,7 @@ parent: Tools
 
 # What is VS Code?
 
-> Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control. It aims to provide only the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to fuller featured IDEs, such as the Visual Studio IDE.
+> Visual Studio Code is a streamlined code editor with support for development operations like debugging, task running, and version control. It aims to provide the tools a developer needs for a quick code-build-debug cycle and leaves more complex workflows to fuller featured IDEs, such as the Visual Studio IDE.
 
 # Install VS Code on macOS
 
@@ -25,7 +25,7 @@ parent: Tools
 
    ![vscode_page](/assets/images/tools/vscode/VScode_download_page.png)
 
-2. After the downloading is done, double click the zip file.
+2. After the downloading is done, double click to open the zip file.
 
    ![vscode_page](/assets/images/tools/vscode/vscode_mac_package.png)
 
