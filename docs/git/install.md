@@ -37,7 +37,7 @@ nav_order: 2
     In this tutorial, we will use Homebrew, a package manager in macOS, to install Git. If you don't like to use Homebrew, you can follow <https://git-scm.com/download/mac> to install Git in another way.  
     Note: if you encounter problems while installing Git using another way, the TA may not be able to help solve your problem.
 
- 2. Follow the steps in the [tutorial]({{ site.baseurl }}{% link docs/tools/homebrew.md %}) to install Homebrew if you don't already have it. For more information about what Homebrew can do, visit the following link <https://brew.sh/>
+ 2. Follow the steps in the [tutorial]({{ site.baseurl }}{% link docs/tools/homebrew.md %}) to install Homebrew if you don't already have it. For more information about what Homebrew can do, visit the following link: <https://brew.sh/>.
 
  3. Once Homebrew is installed, type the following in the terminal to update Homebrew and install Git.
 
@@ -61,7 +61,7 @@ nav_order: 2
 
     > **Note:** replace `<username>` to your GitHub username, and `<email>` to the email address you used to register GitHub.
     >
-    > If you want to know more about the Git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
+    > If you want to know more about the Git config command, you can see here: <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>.
 
  3. Please read [this tutorial]({{ site.baseurl }}{% link docs/common/gen_ssh_key.md %}) to generate SSH keys. Print the public key, then please select and copy the output.
 
@@ -112,9 +112,9 @@ nav_order: 2
 
 ## Section 1: Installing Git for Windows
 
- 1. Visit <https://git-scm.com/download/win> and click on "Git for Windows Setup."
+ 1. Visit <https://git-scm.com/download/win> and click on the first link: "Click here to download".
 
-    ![git_downloads_page](/assets/images/git/install/git_downloads_page.png)
+    ![git_downloads_page](/assets/images/git/install/git_windows_downloads_page.png)
 
  2. Open the file that was downloaded.
 
@@ -138,7 +138,7 @@ nav_order: 2
 
 ## Section 2: Testing the Git installation
 
-Once the installation is completed, open the cmd
+Once the installation is completed, open cmd.
 
  1. In the search bar, type cmd and choose Command Prompt.
 
@@ -148,18 +148,18 @@ Once the installation is completed, open the cmd
 
     ![git_version_output](/assets/images/git/install/git_version_output.png)
 
- 3. ***Note: If you got the following error***
+ 3. ***Note: If you get the following error:***
 
     ![git_path_env_error](/assets/images/git/install/git_path_env_error.png)
 
-    **Then**, you need to add the PATH of Git into the Environment Variables
+    **Then**, you need to add the PATH of Git into the Environment Variables.
 
- 4. In the cmd window, type "`where git`"
+ 4. In the cmd window, type "`where git`":
 
     ![where_git_output](/assets/images/git/install/where_git_output.png)
 
  5. Copy the first line and add it to the environment variables.  
-    To open the environment variables in the search bar, type environment variables and choose Edit system environment variables.
+    To open the environment variables in the search bar, type environment variables and choose "Edit the system environment variables".
 
     ![sys_path_env_editer_search](/assets/images/git/install/sys_path_env_editer_search.png)
 
@@ -181,7 +181,7 @@ Once the installation is completed, open the cmd
 
  1. **First of all**, if you encounter any problems in this section, please read the official GitHub tutorial first, which can solve most of your problems. <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
 
- 2. Open the PowerShell or Git Bash. If you don't know what a terminal is, check out the tutorial [What's the Terminal?]({{ site.baseurl }}{% link docs/common/terminal_and_cmd.md %})  
+ 2. Open PowerShell or Git Bash. If you don't know what a terminal is, check out the tutorial [What's the Terminal?]({{ site.baseurl }}{% link docs/common/terminal_and_cmd.md %})  
     The first thing you should do when you install Git is set your username and email address. This is important because every Git commit uses this information, and it's immutably baked into the commits you start creating:
 
     ```shell
@@ -191,7 +191,7 @@ Once the installation is completed, open the cmd
 
     > **Note:** replace `<username>` to your GitHub username, and `<email>` to the email address you used to register GitHub.
     >
-    > If you want to know more about the Git config command, you can see here <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
+    > If you want to know more about the Git config command, you can see here: <https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>.
 
  3. Please read [this tutorial]({{ site.baseurl }}{% link docs/common/gen_ssh_key.md %}) to generate SSH keys. Print the public key, then please select and copy the output.
 

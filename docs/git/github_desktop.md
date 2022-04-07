@@ -23,19 +23,19 @@ Open the [GitHub Desktop Download Page](https://desktop.github.com/). Choose the
 
 ## Install
 
-After you download GitHub Desktop and click the installation package, you will get a **GitHub Desktop.app** file. Move it to Application folder.
+After you download GitHub Desktop and click the installation package, you will get a **GitHub Desktop.app** file. Move it to the Application folder.
 
 ![GitHub-desktop-install.png](/assets/images/git/github_desktop/github-desktop-install.png)
 
 ## Login to GitHub on Desktop
 
-The first time you open GitHub Desktop it will look like this.
+The first time you open GitHub Desktop it will look like this:
 
 ![GitHub-desktop-1.png](/assets/images/git/github_desktop/github-desktop-1.png)
 
 ## Authorize GitHub Desktop
 
-Click "Sign in to GitHub.com"
+Click "Sign in to GitHub.com".
 
 If you have a GitHub account signed in, you should see a similar page as below. Click "Authorize desktop".
 ![GitHub-desktop-auth.png](/assets/images/git/github_desktop/github-desktop-auth.png)

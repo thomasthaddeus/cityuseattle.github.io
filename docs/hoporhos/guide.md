@@ -39,9 +39,9 @@ In this part, you have 2 ways to clone a GitHub repository to your local machine
 
 ## Git Command Line
 
-In your local machine, open the Terminal (for Mac) or Command Prompt (CMD for Windows). Type the following commands to clone the repository (download the repository to your local machine)
+In your local machine, open the Terminal (for Mac) or Command Prompt (CMD for Windows). Type the following commands to clone the repository (download the repository to your local machine):
 
-**Don't have Git command?** Please follow [Install Git Command]({{ site.baseurl }}{% link docs/git/install.md %}) to install it
+**Don't have Git command?** Please follow [Install Git Command]({{ site.baseurl }}{% link docs/git/install.md %}) to install it.
 
 * `cd {Your course path}/624/Module01` (Assume you're doing the 1st week's HOP, HOS or TT. cd Module02 if you're doing the 2nd week's assignment.)
 
@@ -51,7 +51,7 @@ In your local machine, open the Terminal (for Mac) or Command Prompt (CMD for Wi
 
   ![HOP and HOS organized sturcture](/assets/images/hoporhos/guide/hos-readme-clone.png)
 
-* `cd {repository name}` (Your repository name will be different from mine, you need to replace `{repository name}` with the actual repository name you just downloaded)
+* `cd {repository name}` (Your repository name will be different from mine, you need to replace `{repository name}` with the actual repository name you just downloaded.)
 
   ![HOP and HOS organized sturcture](/assets/images/hoporhos/guide/hos-readme-cd.png)
 
@@ -61,7 +61,7 @@ In your local machine, open the Terminal (for Mac) or Command Prompt (CMD for Wi
 
   ![hos-readme-clone-desktop.png](/assets/images/hoporhos/guide/hos-readme-clone-desktop.png)
 
-* Install GitHub Desktop (If you have not installed GitHub Desktop, please follow [Install GitHub Desktop]({{ site.baseurl }}{% link docs/git/github_desktop.md %}) to install it.)
+* If you have not installed GitHub Desktop, please follow [Install GitHub Desktop]({{ site.baseurl }}{% link docs/git/github_desktop.md %}) to install it.
 
 * After you install it, reclick "Open with GitHub Desktop". GitHub Desktop will automaticlly pop up. Click "Choose" to select a correct local path to store it. Then click "Clone".
 

@@ -26,6 +26,6 @@ To learn more about Git and GitHub visit:
 
 <https://www.youtube.com/watch?v=SWYqp7iY_Tc>
 
-<https://git-scm.com/book/en/v2/Getting-Started-First-Time-Git-Setup>
+<https://git-scm.com/book/en/v2>
 
 <https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
