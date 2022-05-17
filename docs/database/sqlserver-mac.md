@@ -36,22 +36,20 @@ Type or copy the following code into it. Please take care of the indents (If you
 
 ```yml
 version:  "3"
+
 services:
   mssql:
     image: mcr.microsoft.com/azure-sql-edge
     cap_add: [ 'SYS_PTRACE' ]
     environment:
-      - "ACCEPT_EULA=1"
-      - "MSSQL_SA_PASSWORD=YourPassword"
+      - ACCEPT_EULA=1
+      - MSSQL_SA_PASSWORD=StrongPwd123
     ports:
       - "1433:1433"
     hostname: mssql
-    volumes:
-      - "mssql-azuresql-edge-data:/var/opt/mssql"
-  
+
 volumes:
     mssql-azuresql-edge-data:
-    sqlpad-volume:
 ```
 
 
@@ -73,6 +71,22 @@ If everything goes well, you would see a similar outputs like me.
  ![](/assets/images/database/sqlserver-mac/sqlserver-mac-3.png)
 
 
+
+
+
+## Additional Commands
+
+You can press "Ctrl-C" to stop the container. And then you can use "docer-compose start" to start you container in the future.
+
+```bash
+dockcer-compose start
+```
+
+After you want to stop your container. Please use below command.
+
+```bash
+dockcer-compose stop
+```
 
 
 # Connect to Sql Server
