@@ -22,10 +22,10 @@ However, Git only allows you to control your project version on your local machi
 
 To learn more about Git and GitHub visit:
 
-<https://codeburst.io/git-and-github-in-a-nutshell-b0a3cc06458f>
+[Git & GitHub in a Nutshell](https://codeburst.io/git-and-github-in-a-nutshell-b0a3cc06458f)
 
-<https://www.youtube.com/watch?v=SWYqp7iY_Tc>
+[Git & GitHub Crash Course For Beginners](https://www.youtube.com/watch?v=SWYqp7iY_Tc)
 
-<https://git-scm.com/book/en/v2>
+[Git-Pro V2](https://git-scm.com/book/en/v2)
 
-<https://docs.github.com/en/authentication/connecting-to-github-with-ssh>
+[Connecting To GitHub w/SSH](https://docs.github.com/en/authentication/connecting-to-github-with-ssh)
