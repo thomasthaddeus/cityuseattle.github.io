@@ -6,7 +6,7 @@ has_children: true
 permalink: docs/debugging
 ---
 
-# Git
+# VSC Debugging
 {: .no_toc }
 
 
@@ -15,7 +15,11 @@ Visual Studio Code’s debugging tool is an incredibly powerful tool for develop
 
 To learn more about Debugging visit:
 
-https://cityuseattle.github.io/docs/debugging/How_To_Use_DebuggingTools.mp4
+
+<video src="https://cityuseattle.github.io/docs/debugging/How_To_Use_DebuggingTools.mp4" controls="controls" style="max-width: 730px;">
+</video>
+
+
 
 
 
