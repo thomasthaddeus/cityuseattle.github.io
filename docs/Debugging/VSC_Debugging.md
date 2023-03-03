@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Debugging
-nav_order: 2
+nav_order: 7
 has_children: true
 permalink: docs/debugging
 ---
@@ -14,5 +14,7 @@ Visual Studio Code’s debugging tool is an incredibly powerful tool for develop
 
 
 To learn more about Debugging visit:
+
+https://cityuseattle.github.io/docs/debugging/How_To_Use_DebuggingTools.mp4
 
 
