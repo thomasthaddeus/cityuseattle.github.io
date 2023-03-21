@@ -56,9 +56,6 @@ Double-click on the .dmg file and then drag the Docker.app icon to your Applicat
 
 This will enable you to run SQL Server from within a Docker container. 
 
- 
-### Install Docker Desktop on Windows
-
 
 ### Install interactively
 
