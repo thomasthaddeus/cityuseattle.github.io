@@ -54,7 +54,7 @@ Double-click on the .dmg file and then drag the Docker.app icon to your Applicat
 
 ### Download the (free) Docker Community Edition for Windows (unless you’ve already got it installed on your system). 
 
-This will enable you to run SQL Server from within a Docker container. 
+To download, visit the Docker CE for Windows [download page](https://docs.docker.com/desktop/install/windows-install/) and click Get Docker. 
 
 
 ### Install interactively
