@@ -60,7 +60,8 @@ This will enable you to run SQL Server from within a Docker container.
 ### Install Docker Desktop on Windows
 
 
-Install interactively
+### Install interactively
+
     1 Double-click Docker Desktop Installer.exe to run the installer.
 
         If you haven’t already downloaded the installer (Docker Desktop Installer.exe), you can get it from Docker Hub. It typically downloads to your Downloads folder, or you can run it from the recent downloads bar at the bottom of your web browser.
