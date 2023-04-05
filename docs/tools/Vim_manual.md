@@ -17,11 +17,11 @@
 
 ## Further Resources
 
-[R1] - Vim Website
-[R2] - Vim Wiki
-[R3] - Adventures
-[R4] - Casts
-[R5] - Cheat Sheet
+[R1] - Vim Website \
+[R2] - Vim Wiki \
+[R3] - Adventures \
+[R4] - Casts \
+[R5] - Cheat Sheet \
 [R6] - Reddit
 
 ---
