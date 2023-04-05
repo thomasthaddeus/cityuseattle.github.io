@@ -19,7 +19,9 @@
 
 ## Introduction
 
-Emacs is a powerful and extensible text editor designed for efficient text editing. It is available for many platforms, including Windows, Linux, macOS, and more. Emacs offers numerous features and can be extended using the Emacs Lisp programming language.
+Emacs is a powerful and extensible text editor designed for efficient text editing. \
+It is available for many platforms, including Windows, Linux, macOS, and more. \
+Emacs offers numerous features and can be extended using the Emacs Lisp programming language.
 
 ## Installation
 
@@ -29,14 +31,18 @@ Linux (Debian-based distributions): sudo apt-get install emacs
 Linux (Red Hat-based distributions): sudo yum install emacs
 macOS (using Homebrew): brew install emacs
 Windows: Download the installer from https://www.gnu.org/software/emacs/download.html
-Basic Concepts
+
+## Basic Concepts
+
 Emacs operates primarily using keystrokes and commands. Some essential concepts include:
 
 Commands: Functions that perform various operations
 Keybindings: Keyboard shortcuts associated with commands
 Buffers: Instances of files or data being edited
 Windows: Display areas for buffers
-Basic Commands
+
+## Basic Commands
+
 C-x C-f: Open a file (Find file)
 C-x C-s: Save the current buffer (Save buffer)
 C-x C-c: Quit Emacs (Exit)
@@ -44,14 +50,17 @@ C-g: Cancel the current command
 C-x u: Undo last change (Undo)
 Note: "C" denotes the Control key. For example, "C-x" means "press the Control key and the 'x' key simultaneously."
 
-Buffers and Windows
+## Buffers and Windows
+
 C-x b: Switch to a different buffer
 C-x k: Kill (close) the current buffer
 C-x 2: Split the window horizontally
 C-x 3: Split the window vertically
 C-x 1: Close all windows except the current one
 C-x o: Move to the next window
+
 Search and Replace
+
 C-s: Incremental search forward
 C-r: Incremental search backward
 C-M-%: Query replace (search and replace with prompting)
@@ -107,8 +116,8 @@ Search for or ask questions on forums, such as Stack Overflow or Emacs Reddit co
 
 ## Further Resources
 
-Official Emacs website: https://www.gnu.org/software/emacs/
-Emacs Wiki: https://www.emacswiki.org/
-Emacs Stack Exchange: https://emacs.stackexchange.com/
-Emacs Reddit community: https://www.reddit.com/r/emacs/
-Mastering Emacs (book): https://www.masteringemacs.org/
+Official Emacs website: <https://www.gnu.org/software/emacs/>
+Emacs Wiki: <https://www.emacswiki.org/>
+Emacs Stack Exchange: <https://emacs.stackexchange.com/>
+Emacs Reddit community: <https://www.reddit.com/r/emacs/>
+Mastering Emacs (book): <https://www.masteringemacs.org/>
