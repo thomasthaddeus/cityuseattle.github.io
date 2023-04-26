@@ -14,7 +14,6 @@ Visual Studio Code’s debugging tool is an incredibly powerful tool for develop
 
 
 Please watch below video to learn more about Debugging:
-Test
 
 
 <video src="https://cityuseattle.github.io/docs/debugging/How_To_Use_DebuggingTools.mp4" controls="controls" style="max-width: 730px;">
