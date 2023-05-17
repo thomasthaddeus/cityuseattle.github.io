@@ -22,7 +22,12 @@ A variable can have a short name (like x and y) or a more descriptive name (age,
 * A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _)
 * Variable names are case-sensitive (age, Age and AGE are three different variables)
 
-To create the variable type message = “Hello World” and run your python file.
+To create the variable type
+<pre><code>
+message = “Hello World”
+</code></pre>
+
+##Multiple assignments 
 
 Python allows you to assign values to multiple variables in one line and you can assign the same value to multiple variables in one line.
 <pre><code>
