@@ -26,7 +26,7 @@ To create the variable type message = “Hello World” and run your python file
 
 Python allows you to assign values to multiple variables in one line and you can assign the same value to multiple variables in one line.
 
-![Multiple variables](/assets/images/python/python_multipleassignment.jpg)
+![Multiple variables]<img src="/assets/images/python/python_multipleassignment.jpg" alt="Multiple variables" width="100%" height="200"/>
 
 
 
