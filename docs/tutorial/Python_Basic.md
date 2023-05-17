@@ -26,15 +26,15 @@ To create the variable type message = “Hello World” and run your python file
 
 Python allows you to assign values to multiple variables in one line and you can assign the same value to multiple variables in one line.
 <pre><code>
-    print("\nMultiple assignments\n")
-    a, b, c = 5, 3.2, "Hello"
-    print ("a = ", a)
-    print ("b = " , b)
-    print ("c = ", c)
-    x = y = z = "Python"
-    print ("x ="+ x)
-    print ("y ="+ y)
-    print ("z ="+ z)
+print("\nMultiple assignments\n")
+a, b, c = 5, 3.2, "Hello"
+print ("a = ", a)
+print ("b = " , b)
+print ("c = ", c)
+x = y = z = "Python"
+print ("x ="+ x)
+print ("y ="+ y)
+print ("z ="+ z)
 </code></pre>
 
 
