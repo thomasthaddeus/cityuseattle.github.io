@@ -1,8 +1,9 @@
 ---
 layout: default
-title: Python Basic
-parent: Tutorial
-nav_order: 1
+title: Tutorial
+nav_order: 10
+has_children: true
+permalink: docs/tutorial
 ---
 1. TOC
 {:toc}
