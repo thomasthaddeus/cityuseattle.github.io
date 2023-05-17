@@ -7,9 +7,9 @@ permalink: docs/pythonbasic
 ---
 
 # Python Installation
-{: .no_toc }
 
-For Python installation follow https://cityuseattle.github.io/docs/environment/python/
+
+For Python installation follow (https://cityuseattle.github.io/docs/environment/python/)
 
 
 
