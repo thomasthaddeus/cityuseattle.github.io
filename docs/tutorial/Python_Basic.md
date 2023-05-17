@@ -28,7 +28,8 @@ message = “Hello World”
 
 ## Multiple assignments 
 
-Python allows you to assign values to multiple variables in one line and you can assign the same value to multiple variables in one line.<pre><code>
+Python allows you to assign values to multiple variables in one line and you can assign the same value to multiple variables in one line.
+<pre><code>
 print("\nMultiple assignments\n")
 a, b, c = 5, 3.2, "Hello"
 print ("a = ", a)
