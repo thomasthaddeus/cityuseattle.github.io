@@ -25,8 +25,17 @@ A variable can have a short name (like x and y) or a more descriptive name (age,
 To create the variable type message = “Hello World” and run your python file.
 
 Python allows you to assign values to multiple variables in one line and you can assign the same value to multiple variables in one line.
-
-<img src="/assets/images/python/python_multipleassignment.jpg" alt="Multiple variables" width="300%" height="100"/>
+`
+```python
+print("\nMultiple assignments\n")
+a, b, c = 5, 3.2, "Hello"
+print ("a = ", a)
+print ("b = " , b)
+print ("c = ", c)
+x = y = z = "Python"
+print ("x ="+ x)
+print ("y ="+ y)
+print ("z ="+ z)`
 
 
 
