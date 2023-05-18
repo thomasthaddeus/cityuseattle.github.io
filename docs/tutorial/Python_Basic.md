@@ -30,7 +30,8 @@ message = “Hello World”
 ## Multiple assignments 
 
 Python allows you to assign values to multiple variables in one line and you can assign the same value to multiple variables in one line.
-<pre><code>
+
+<code>
 print("\nMultiple assignments\n")
 a, b, c = 5, 3.2, "Hello"
 print ("a = ", a)
@@ -40,7 +41,7 @@ x = y = z = "Python"
 print ("x ="+ x)
 print ("y ="+ y)
 print ("z ="+ z)
-</code></pre>
+</code>
 # Data Types 
 Data types are the classification or categorization of data items. Data types represent a kind of value which determines what operations can be performed on that data. Numeric, non-numeric, and Boolean (true/false) are the most used data types.
 
@@ -49,35 +50,41 @@ A numeric data type is any representation of data which has a numeric value. Pyt
 * Integer: Positive or negative whole numbers (without a fractional part). For example: >>> x = 5 
 * Float: Any real number with a floating-point representation in which a fractional component is denoted by a decimal symbol or scientific notation. For example: >>> y = 2.5 
 * Complex number: A number with a real and imaginary component represented as x+yi. x and y are floats and i is -1 (the square root of -1 is called an imaginary number). For example:      
-<pre><code>
+
+<code>
  z = 2 + 3i
-</code></pre>
+</code>
 ## Boolean 
 A Boolean is data with one of two built-in values: True or False. Notice that 'T' and 'F' are capitalized. “true” and “false” are not valid Booleans and Python will throw an error for them. For example: 
-<pre><code>
+
+<code>
 print (10>9)  
-</code></pre>
+</code>
 Result: *True*
 ## Sequence 
 Type A sequence is an ordered collection of similar or different data types. Python has the following built-in sequence data types: 
 * String: A string value is a collection of one or more characters put in single, double, or triple quotes. The string is initialized in the following ways: 
-<pre><code>
+
+<code>
 message = “This is a string declaration”  
 message = ‘This is also a string declaration’
-</code></pre> 
+</code>
 * List: A list object is an ordered collection of one or more data items, not necessarily of the same type, put in square brackets. 
-<pre><code>
+
+<code>
 list1 = ['physics', 'chemistry', 1997, 2000]
-</code></pre> 
+</code> 
 * Tuple: A Tuple object is an ordered collection of one or more data items, not necessarily of the same type, put in parentheses. A tuple is not mutable, i.e., it doesn't have any methods for changing its contents. 
-<pre><code>
+
+<code>
 tup1 = ('physics', 'chemistry', 1997, 2000)
-</code></pre>
+</code>
 ## Dictionary 
 A dictionary object is an unordered collection of data in a key: value pair form. A collection of such pairs is enclosed in curly brackets. For example:
-<pre><code>
+
+<code>
 {1:"Steve", 2:"Bill", 3:"Ram", 4: "Farha"}
-</code></pre>
+</code>
 
 
 
