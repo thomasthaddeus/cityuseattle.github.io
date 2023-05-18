@@ -58,7 +58,7 @@ A numeric data type is any representation of data which has a numeric value. Pyt
 ## Boolean 
 
 A Boolean is data with one of two built-in values: True or False. Notice that 'T' and 'F' are capitalized. “true” and “false” are not valid Booleans and Python will throw an error for them. For example: 
- <pre><code>
+<pre><code>
 print (10>9)  
 </code></pre>
 Result: *True*
@@ -69,21 +69,21 @@ Type A sequence is an ordered collection of similar or different data types. Pyt
  <pre><code>
 message = “This is a string declaration”  
 message = ‘This is also a string declaration’
- </code></pre> 
+</code></pre> 
 * List: A list object is an ordered collection of one or more data items, not necessarily of the same type, put in square brackets. 
 <pre><code>
 list1 = ['physics', 'chemistry', 1997, 2000]
- </code></pre> 
+</code></pre> 
 * Tuple: A Tuple object is an ordered collection of one or more data items, not necessarily of the same type, put in parentheses. A tuple is not mutable, i.e., it doesn't have any methods for changing its contents. 
 <pre><code>
 tup1 = ('physics', 'chemistry', 1997, 2000)
- </code></pre>
+</code></pre>
 
 ## Dictionary 
 A dictionary object is an unordered collection of data in a key: value pair form. A collection of such pairs is enclosed in curly brackets. For example:
 <pre><code>
 {1:"Steve", 2:"Bill", 3:"Ram", 4: "Farha"}
- </code></pre>
+</code></pre>
 
 
 
