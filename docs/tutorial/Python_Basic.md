@@ -77,7 +77,7 @@ Type A sequence is an ordered collection of similar or different data types. Pyt
 * Tuple: A Tuple object is an ordered collection of one or more data items, not necessarily of the same type, put in parentheses. A tuple is not mutable, i.e., it doesn't have any methods for changing its contents. 
 <pre><code>
     tup1 = ('physics', 'chemistry', 1997, 2000)
- </code></pre>WWW
+ </code></pre>
 
 
 
