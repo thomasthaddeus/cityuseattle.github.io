@@ -22,6 +22,7 @@ A variable can have a short name (like x and y) or a more descriptive name (age,
 * Variable names are case-sensitive (age, Age and AGE are three different variables)
 
 To create the variable type
+
 <code>
 message = “Hello World”
 </code>
