@@ -79,7 +79,11 @@ list1 = ['physics', 'chemistry', 1997, 2000]
 tup1 = ('physics', 'chemistry', 1997, 2000)
  </code></pre>
 
-
+## Dictionary 
+A dictionary object is an unordered collection of data in a key: value pair form. A collection of such pairs is enclosed in curly brackets. For example:
+<pre><code>
+{1:"Steve", 2:"Bill", 3:"Ram", 4: "Farha"}
+ </code></pre>
 
 
 
