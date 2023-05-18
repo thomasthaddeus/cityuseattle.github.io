@@ -67,16 +67,16 @@ Result: *True*
 Type A sequence is an ordered collection of similar or different data types. Python has the following built-in sequence data types: 
 * String: A string value is a collection of one or more characters put in single, double, or triple quotes. The string is initialized in the following ways: 
  <pre><code>
-    message = “This is a string declaration”  
-    message = ‘This is also a string declaration’
+message = “This is a string declaration”  
+message = ‘This is also a string declaration’
  </code></pre> 
 * List: A list object is an ordered collection of one or more data items, not necessarily of the same type, put in square brackets. 
 <pre><code>
-    list1 = ['physics', 'chemistry', 1997, 2000]
+list1 = ['physics', 'chemistry', 1997, 2000]
  </code></pre> 
 * Tuple: A Tuple object is an ordered collection of one or more data items, not necessarily of the same type, put in parentheses. A tuple is not mutable, i.e., it doesn't have any methods for changing its contents. 
 <pre><code>
-    tup1 = ('physics', 'chemistry', 1997, 2000)
+tup1 = ('physics', 'chemistry', 1997, 2000)
  </code></pre>
 
 
