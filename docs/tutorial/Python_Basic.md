@@ -43,6 +43,25 @@ print ("y ="+ y)
 print ("z ="+ z)
 </code></pre>
 
+# Data Types 
+Data types are the classification or categorization of data items. Data types represent a kind of value which determines what operations can be performed on that data. Numeric, non-numeric, and Boolean (true/false) are the most used data types.
+
+## Numeric 
+A numeric data type is any representation of data which has a numeric value. Python identifies three types of numbers: 
+* Integer: Positive or negative whole numbers (without a fractional part). For example: >>> x = 5 
+* Float: Any real number with a floating-point representation in which a fractional component is denoted by a decimal symbol or scientific notation. For example: >>> y = 2.5 
+* Complex number: A number with a real and imaginary component represented as x+yi. x and y are floats and i is -1 (the square root of -1 is called an imaginary number). For example:      
+ <pre><code>
+ z = 2 + 3i
+</code></pre>
+
+## Boolean 
+
+A Boolean is data with one of two built-in values: True or False. Notice that 'T' and 'F' are capitalized. “true” and “false” are not valid Booleans and Python will throw an error for them. For example: 
+ <pre><code>
+print (10>9)  
+</code></pre>
+Result: *True*
 
 
 
