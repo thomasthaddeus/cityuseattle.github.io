@@ -269,3 +269,77 @@ import random
 for i in range(1, random.randint(5, 15)): 
     print('This for loop has already run'+ str(i) +' times.')
 </code></pre>
+
+### Iterating by Sequence Index 
+An alternative way of iterating through each item is by index offset into the sequence itself. Look at the example below:
+<pre><code>
+fruits = ['banana', 'apple’, ‘mango'] 
+for index in range(len(fruits)): 
+    print ('Current fruit:', fruits[index])
+</code></pre>
+
+The len() built-in function provides the total number of elements in the tuple and the range() built-in function gives us the actual sequence to iterate over. So, the length of the fruit is 3 and the range starts from 0 to 2. When the range is 0, banana is printed, when the range is 1, apple is printed, and when the range is 2, mango is printed.
+
+### Using else Statement with for 
+When the else statement is used with a for loop, the else statement is executed when the loop has exhausted iterating the list.
+<pre><code>
+for num in range(10, 20):
+    for i in range(2, num): 
+        if num % i==0:
+            j = num / i
+
+            print('%d equals %d * %d' % (num, i, j))
+            break
+else:
+    print(num, 'is a prime number')
+</code></pre>
+
+### Loop Control Statements 
+Loop control statements change execution from its normal sequence. When execution leaves a scope, all automatic objects that were created in that scope are destroyed.
+
+#### break statement 
+The break statement terminates the current loop and resumes execution at the next statement. The most common use for break is when some external condition is triggered requiring a hasty exit from a loop. The break statement can be used in both while and for loops.
+If you are using nested loops, the break statement stops the execution of the innermost loop and start executing the next line of code after the block.
+
+<pre><code>
+print("For-Break") 
+for letter in "Python":
+    if letter == 'h':
+        break
+    print("Current Letter:", letter)
+print("\nwhile-Break")
+var = 10
+while var > 0:
+    print ("Current variable value:", var)
+    var =  var - 1
+    if var==5:
+        break
+
+print("Good bye!")
+</code></pre>
+
+#### continue statement 
+The continue statement returns the control to the beginning of the loop. The continue statement rejects all the remaining statements in the current iteration of the loop and moves the control back to the top of the loop.
+<pre><code>
+print("For-Continue")
+for letter in "Python": 
+    if letter == "h":
+        continue
+    print("Current Letter:", letter)
+print("\nwhile-Continue")
+var = 10
+while var > 0:
+    var = var - 1
+    if var == 5:
+        continue
+    print("Current variable value:", var)
+</code></pre>
+
+## Data conversion
+<pre><code>
+price= 10
+print('How many beers do you want?')
+print('Your total price is: $' +str( price * int(input())))
+</code></pre>
+
+we use int() to convert the input value to an integer and use str() to convert the result of calculation back to a string. We also can use float() to convert a value to a float number.
