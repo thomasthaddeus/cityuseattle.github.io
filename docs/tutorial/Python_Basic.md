@@ -167,7 +167,7 @@ print("The type of the variable age is", type(age))
 
 age = int(age) converts the input value to a numerical representation. After this conversion, if you check the type of age, it is displayed as int (integer).
 
-Python Decision making
+# Python Decision making
 Decision making is the anticipation of conditions occurring while a program executes and specifying actions to take according to the conditions.
 Decision structures evaluate multiple expressions which produce TRUE or FALSE as the outcome. You need to determine which action to take and which statements to execute if an outcome is TRUE or FALSE.
 The Python programming language assumes any non-zero and non-null values are TRUE, and if they are either zero or null, then they are assumed to be FALSE.
