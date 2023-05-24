@@ -151,7 +151,8 @@ Identity operators compare the memory locations of two objects.
 
   ![Identity Operators](/assets/images/python/Identity Operators.jpg)
 
-#User Input 
+# User Input 
+
 To receive information through the keyboard, Python uses the input() function. This function has an optional parameter, commonly known as prompt, which is a string that will be printed on the screen whenever the function is called.
 When the input() function is called, the program flow stops until the user enters the input via the command line. To enter the data, the user needs to press the ENTER key after inputting their string. While hitting the ENTER key usually inserts a newline character ("\n"), it does not in this case. The entered string will simply be submitted to the application.
 The input() function, by default, will convert all the information it receives into a string.
@@ -168,6 +169,7 @@ print("The type of the variable age is", type(age))
 age = int(age) converts the input value to a numerical representation. After this conversion, if you check the type of age, it is displayed as int (integer).
 
 # Python Decision making
+
 Decision making is the anticipation of conditions occurring while a program executes and specifying actions to take according to the conditions.
 Decision structures evaluate multiple expressions which produce TRUE or FALSE as the outcome. You need to determine which action to take and which statements to execute if an outcome is TRUE or FALSE.
 The Python programming language assumes any non-zero and non-null values are TRUE, and if they are either zero or null, then they are assumed to be FALSE.
