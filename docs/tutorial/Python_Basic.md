@@ -116,7 +116,9 @@ The commonly used operators are discussed below.
 
 ## Arithmetic Operators
 Consider the values of a = 10 and b = 20.
-![Arithmetic Operators](/Arithmetic.jpg)
+
+  ![Arithmetic Operators](/assets/images/python/Arithmetic.jpg)
+
 
 
 
