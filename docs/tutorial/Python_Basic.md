@@ -156,6 +156,7 @@ Identity operators compare the memory locations of two objects.
 To receive information through the keyboard, Python uses the input() function. This function has an optional parameter, commonly known as prompt, which is a string that will be printed on the screen whenever the function is called.
 When the input() function is called, the program flow stops until the user enters the input via the command line. To enter the data, the user needs to press the ENTER key after inputting their string. While hitting the ENTER key usually inserts a newline character ("\n"), it does not in this case. The entered string will simply be submitted to the application.
 The input() function, by default, will convert all the information it receives into a string.
+
 <pre><code>
 name = input("Please enter your name: ") 
 print("\nWelcome to python," + name + "!")
@@ -175,17 +176,17 @@ Decision structures evaluate multiple expressions which produce TRUE or FALSE as
 The Python programming language assumes any non-zero and non-null values are TRUE, and if they are either zero or null, then they are assumed to be FALSE.
 
 ## If-else
+
 The if statement contains a logical expression in which data is compared and a decision is made based on the result of the comparison.
 If the Boolean expression evaluates to TRUE, then the block of statement(s) inside the if statement is executed. If the Boolean expression evaluates to FALSE, then the first set of code after the end of the if statement(s) is executed.
-
 An else statement can be combined with an if statement. An else statement contains the block of code that executes if the conditional expression in the if statement resolves to 0 or a FALSE value.
 The else statement is an optional statement and there can only be one else statement following if.
 
 Syntax:
     if expression:
-    statement(s)
+        statement(s)
     else:
-    statement(s)
+        statement(s)
 
 ## nested if statements
 There may be a situation when you want to check for another condition after a condition resolves to true. In such a situation, you can use the nested if construct.
@@ -193,20 +194,21 @@ In a nested if construct, you can have an if...elif...else construct inside anot
 
 Syntax:
     if expression1:
-    statement(s)
+        statement(s)
     if expression2:
-    statement(s)
+        statement(s)
     elif expression3:
-    statement(s)
+        statement(s)
     elif expression4:
-    statement(s)
+        statement(s)
     else:
-    statement(s)
+        statement(s)
     else:
-    statement(s)
+        statement(s)
 
-print('How old are you?') 
+
 <pre><code>
+print('How old are you?') 
 age = int(input())
 if age < 21:
     print('You are too young to have a drink.')
