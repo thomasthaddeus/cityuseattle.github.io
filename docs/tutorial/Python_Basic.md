@@ -118,6 +118,24 @@ The commonly used operators are discussed below.
 Consider the values of a = 10 and b = 20.
 
   ![Arithmetic Operators](/assets/images/python/Arithmetic.jpg)
+<pre><code>
+print("\n FLoat\n")
+a =2.2
+b =2 
+c = 0.1
+print(" a+b = ",a+b)
+print(" a+c = ",a+c)
+print(" a*b = ",a*b)
+print(" a*c = ",a*c)
+</code></pre>
+
+If we look at the answer of a + c and a ** b, it is displayed as an arbitrary number of decimal places. This happens in all languages and is of little concern. Python tries to find a way to represent the result as precisely as possible, which is sometimes difficult given how computers have to represent numbers internally.
+
+## Comparison Operators
+Consider the values of a = 10 and b = 20.
+
+  ![Comparison Operators](/assets/images/python/Comparison Operators.jpg)
+
 
 
 
