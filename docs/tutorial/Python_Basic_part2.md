@@ -23,7 +23,7 @@ age = input("\nEnter your age: ")
 age = int(age)
 print("\nENter Your age is" , age)
 print("The type of the variable age is", type(age))
-</pre></code>
+</code></pre>
 
 age = int(age) converts the input value to a numerical representation. After this conversion, if you check the type of age, it is displayed as int (integer).
 
@@ -59,7 +59,7 @@ elif age >= 80:
     print('Ok, you will get a free drink.')
 else:
     print('Sure, enjoy your drink.')
-</pre></code>
+</code></pre>
 
 
 
