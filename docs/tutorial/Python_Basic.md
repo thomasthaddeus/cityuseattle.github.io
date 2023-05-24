@@ -78,6 +78,45 @@ A dictionary object is an unordered collection of data in a key: value pair form
 {1:"Steve", 2:"Bill", 3:"Ram", 4: "Farha"}
 </code></pre>
 
+# String functions
+Python has a set of built-in methods that you can use on strings.
+<pre><code>
+message = "this is also a string"
+print("Title:" + message.title())
+print("Uppercase: "+ message.upper())
+print("Lowercase: "+ message. lower())
+</code></pre>
+
+The title() method returns a string where the first character in every word is upper case. If the word contains a number or a symbol, the first letter after that will be converted to upper case.
+The upper() method returns a string where all characters are in upper case. Symbols and numbers are ignored.
+The lower() method returns a string where all characters are lower case. Symbols and numbers are ignored.
+
+## Concatenation:
+In Python, there are a few ways to concatenate, or combine, strings. The new string that is created is referred to as a string object. This is because everything in Python is an object – which is why Python is an objected-oriented language.
+<pre><code>
+first_message =  "Hi!"
+second_message =  "How are you ?"
+full_message =  f"{first_message}  {second_message}"
+print(full_message)
+</code></pre>
+
+Also called “formatted string literals,” f-strings are string literals that have an f at the beginning and curly braces containing expressions that will be replaced with their values. The expressions are evaluated at runtime and then formatted using the __format__ protocol.
+
+# Numbers and operators
+The Python language supports the following types of operators:
+* Arithmetic Operators
+* Comparison (Relational) Operators
+* Assignment Operators
+* Logical Operators
+* Bitwise Operators
+* Membership Operators
+* Identity Operators
+
+The commonly used operators are discussed below.
+
+## Arithmetic Operators
+Consider the values of a = 10 and b = 20.
+<img>Arithmetic.jpg</img>
 
 
 
