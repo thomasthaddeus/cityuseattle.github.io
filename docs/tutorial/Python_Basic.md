@@ -335,7 +335,7 @@ while var > 0:
     print("Current variable value:", var)
 </code></pre>
 
-## Data conversion
+# Data conversion
 <pre><code>
 price= 10
 print('How many beers do you want?')
