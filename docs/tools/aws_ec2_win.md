@@ -1,3 +1,19 @@
+---
+layout: default
+title: Setup Windows in AWS
+parent: Tools
+---
+
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+ 1. TOC
+{:toc}
+
+---
+
 # Setting Up Windows EC2 Instance in AWS
 
 A common situation for Mac users in particular is to not be able to use Microsoft products like Power BI or Access database. A straightforward if inefficient solution is to make a virtual Windows instance using the EC2 service on AWS. This guide will show you how to set up a free tier solution, which you could pay Amazon money for to get better performance if you so choose. Much of this guide will also be applicable to setting up Linux instances, such that there's a good chance you could probably figure out the difference, but we won't be covering that explicitly at this time.
