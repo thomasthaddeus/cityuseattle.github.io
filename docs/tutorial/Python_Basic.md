@@ -228,7 +228,7 @@ while num >= 1:
 print('The sum is:'    + str(total))
 </code></pre>
 
-## Infinite Loop - While
+### Infinite Loop - While
 
 A loop becomes an infinite loop if a condition never becomes FALSE. You must use caution when using while loops because of the possibility that this condition never resolves to a FALSE value.
 This results in a loop that never ends. Such a loop is called an infinite loop.
@@ -242,3 +242,30 @@ while
 </code></pre>
 
 The value of x will start at 1 but never change. As a result, the conditional test x <= 5 will always evaluate to True and the while loop will run forever, printing a series of 1s.
+
+### Using else Statements with while 
+When the else statement is used with a while loop, the else statement is executed when the condition becomes false.
+
+<pre><code>
+count = 0
+while count < 5:
+    print (count, "is less than 5") 
+    count = count + 1
+else:
+
+    print (count, "is not less than 5")
+</code></pre>
+
+The value of count will be incremented each time and the condition is checked to see if the count is less than 5. While the count is less than 5, the while loop continuous, and when the condition becomes false, in the else part of the statement is executed.
+
+## For loop
+for loops are traditionally used when you have a block of code which you want to repeat a fixed number of times. The Python for statement iterates over the members of a sequence in order, executing the block each time.
+
+  ![For loop](/assets/images/python/forloop.jpg)
+
+If a sequence contains an expression list, it is evaluated first. Then, the first item in the sequence is assigned to the iterating variable iterating_var. Next, the statement(s) block is executed. Each item in the list is assigned to iterating_var, and the statement(s) block is executed until the entire sequence is exhausted.
+<pre><code>
+import random
+for i in range(1, random.randint(5, 15)): 
+    print('This for loop has already run'+ str(i) +' times.')
+</code></pre>
