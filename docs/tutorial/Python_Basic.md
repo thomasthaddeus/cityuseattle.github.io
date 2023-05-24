@@ -202,3 +202,43 @@ elif age >= 80:
 else:
     print('Sure, enjoy your drink.')
 </code></pre>
+
+# Loops
+In general, statements are executed sequentially. The first statement in a function is executed first, followed by the second, and so on. There may be a situation when you need to execute a block of code several numbers of times.
+Programming languages provide various control structures that allow for more complicated execution paths.
+A loop statement allows us to execute a statement or group of statements multiple times.
+
+## While loop
+The while loop runs as long as, or while, a certain condition is true.
+
+  ![while loop](/assets/images/python/whileloop.jpg)
+
+Here, statement(s) may be a single statement or a block of statements. The condition may be any expression, and true is any non-zero value. The loop iterates while the condition is true. When the condition becomes false, program control passes to the line immediately following the loop.
+In Python, all the statements indented by the same number of character spaces after a programming construct are part of a single block of code. Python uses indentation as its method of grouping statements.
+
+<pre><code>
+print('This program will sum up numbers from 1 to a number you enter.') 
+print('Please enter the ending number: ')
+
+num = int(input())
+total = 0
+while num >= 1:
+    total += num
+    num -= 1
+print('The sum is:'    + str(total))
+</code></pre>
+
+## Infinite Loop - While
+
+A loop becomes an infinite loop if a condition never becomes FALSE. You must use caution when using while loops because of the possibility that this condition never resolves to a FALSE value.
+This results in a loop that never ends. Such a loop is called an infinite loop.
+An infinite loop might be useful in client/server programming where the server needs to run continuously so that client programs can communicate with it as and when required. Look at the example below:
+
+<pre><code>
+x = 1 
+while 
+    x <= 5:
+    print(x)
+</code></pre>
+
+The value of x will start at 1 but never change. As a result, the conditional test x <= 5 will always evaluate to True and the while loop will run forever, printing a series of 1s.
