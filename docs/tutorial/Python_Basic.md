@@ -116,7 +116,7 @@ The commonly used operators are discussed below.
 
 ## Arithmetic Operators
 Consider the values of a = 10 and b = 20.
-![Arithmetic Operators](<img>Arithmetic.jpg</img>)
+![Arithmetic Operators](/Arithmetic.jpg)
 
 
 
