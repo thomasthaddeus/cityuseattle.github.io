@@ -182,29 +182,13 @@ If the Boolean expression evaluates to TRUE, then the block of statement(s) insi
 An else statement can be combined with an if statement. An else statement contains the block of code that executes if the conditional expression in the if statement resolves to 0 or a FALSE value.
 The else statement is an optional statement and there can only be one else statement following if.
 
-Syntax:
-    if expression:
-        statement(s)
-    else:
-        statement(s)
+  ![If-else](/assets/images/python/if-else.jpg)
 
 ## nested if statements
 There may be a situation when you want to check for another condition after a condition resolves to true. In such a situation, you can use the nested if construct.
 In a nested if construct, you can have an if...elif...else construct inside another if...elif...else construct.
 
-Syntax:
-    if expression1:
-        statement(s)
-    if expression2:
-        statement(s)
-    elif expression3:
-        statement(s)
-    elif expression4:
-        statement(s)
-    else:
-        statement(s)
-    else:
-        statement(s)
+  ![Nested-If-else](/assets/images/python/nested-if-else.jpg)
 
 
 <pre><code>
