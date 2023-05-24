@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Python Basic Part 1
+title: Python Basic 
 parent: Tutorial
 nav_order: 1
 ---
