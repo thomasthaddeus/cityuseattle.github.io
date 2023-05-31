@@ -48,6 +48,7 @@ Go to the [EC2 instance console](https://console.aws.amazon.com/ec2/) and click 
   - How much better? The [requirements page](https://learn.microsoft.com/en-us/windows-server/get-started/hardware-requirements) for Windows Server says at least 512 MB are needed for physical installations, but at least 800 MB for virtual ones. This is just less than our 1 GB, so 2 GB might give us enough breathing room without spending too much money. This would be the t2.small instance type, which is appropriately twice as expensive per hour.
   - *NOTE: All AWS billing is on-demand, which is a key selling point of cloud services. You are only charged for each hour of a running instance - so make sure to stop your instances when you're done!*
   - Free Tier will be explained explicitly on the right of the screen. Usually, something like the first 750 hours of use are free. This is only available for t2.micro instance types at the time of writing.
+  - For perspective, a t2.small instance -- twice the t2.micro -- costs $20/week if left running 24/7
 - Key pairs are a key security item. Click on "Create new pair" and give it a name. Leaving it as PEM is fine unless you know you need PPK.
   - *IMPORTANT: Download and save your key now because it's your only chance.*
   - You can also reuse keys between instances, though this potentially creates security vulnerabilities.
@@ -64,5 +65,12 @@ From "View All Instances" you'll first want to check the "Instance state" of the
 - To connect, you can either check the box and click "Connect" at the top of the screen; or you can click on the alphanumeric "Instance ID" to go to a status screen, which will also have a dedicated "Connect" button at the top of the screen.
 - Either way, on the next screen, choose "RDP client" since we set up the network with a RDP connection. You can download the RDP file to a location on your computer. Keep this location in mind. 
 - Click "Get password" then on the next screen click "Upload private key file" and choose the PEM (or PPK) file you downloaded earlier. Click "Decrypt password." Copy the new password towards the bottom of the screen. *Do this now because you won't have another chance.* 
+- Download the remote desktop file, an RDP file for use with an external RDP client.
+
+## Setting Remote Desktop
 
 That's all you can do from AWS itself. Next you'll need to download a Remote Desktop client from Microsoft, the eternal gatekeepers. You should be able to just search for this on the App Store. (Linux is more complicated. We don't cover that in this tutorial.)
+
+To get the Remote Desktop client for Windows, you can search for "remote desktop for mac" in the App Store. As of this writing, it's from Microsoft and has a red and white icon. Go ahead and download and install. Open the downloaded RDP file in this program.
+
+You will be prompted for a login. This should be "administrator" and the password that you downloaded above. You should the be able to launch the instance from the preview window. Please be patient. This is a bit slow.
