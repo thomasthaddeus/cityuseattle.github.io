@@ -19,7 +19,7 @@ This necessitates finding novel solutions. Let's look at what virtual machine so
 
 ## 1) Parallels
 
-[Parallels](https://www.parallels.com/) is probably the best all-around solution, with the significant caveat that it is not free, and is arguably pretty expensive. But it's relatively fast and easy to use, so it may be worth it.
+[Parallels](https://www.parallels.com/) is probably the best all-around solution, with the significant caveat that it is not free, and is arguably pretty expensive. But it's relatively fast and easy to use, so it may be worth it. Think of it as school supplies or a textbook which you'd usually have to pay for in a course anyway. There should be a student discount where the first year should be about $5/month billed annually. Setup is pretty easy, and it's generally faster than virtualization options including AWS EC2 below.
 
 ## 2) AWS EC2
 
