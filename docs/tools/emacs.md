@@ -40,10 +40,12 @@ Depending on your operating system, follow the steps below to install Emacs:
 
 Emacs operates primarily using keystrokes and commands. Some essential concepts include:
 
-**Commands** |  Functions that perform various operations \
-**Keybindings** |  Keyboard shortcuts associated with commands \
-**Buffers** |  Instances of files or data being edited \
-**Windows** |  Display areas for buffers
+|Concept|Definition|
+|---|---|
+|**Commands** |  Functions that perform various operations|
+|**Keybindings** |  Keyboard shortcuts associated with commands|
+|**Buffers** |  Instances of files or data being edited|
+|**Windows** |  Display areas for buffers|
 
 ## Basic Commands
 
@@ -81,7 +83,13 @@ Emacs operates primarily using keystrokes and commands. Some essential concepts 
 
 ### Editing Modes
 
-Emacs provides various modes for different file types and tasks. Modes can be **major** (one per buffer) or **minor** (multiple per buffer). Some popular major modes include:
+Emacs provides various modes for different file types and tasks.
+
+1. Modes can be
+   - **major** (one per buffer)
+   - **minor** (multiple per buffer).
+
+Some popular major modes include:
 
 |Command|Outcome|
 |---|---|
@@ -124,8 +132,10 @@ Emacs supports packages and extensions to enhance its functionality. Emacs inclu
 Learn Emacs Lisp to extend and customize Emacs
 
 - Use `Alt-x` `apropos` to search for commands and functions related to a keyword
-- Familiarize yourself with Emacs' built-in help system (`Ctrl-h` followed by a key or command)
-- Practice Emacs with interactive tutorials, such as `Alt-x` help-with-tutorial
+- Familiarize yourself with Emacs' built-in help system
+  - `Ctrl-h` "**followed by a key or command**"
+- Practice Emacs with interactive tutorials, such as:
+  - `Alt-x` `help-with-tutorial`
 
 ### Troubleshooting
 
@@ -135,10 +145,10 @@ Learn Emacs Lisp to extend and customize Emacs
 
 ## Resources
 
-[EMACS website]
-[EMACS wiki]
-[Stack Exchange]
-[Reddit]
+[EMACS website] \
+[EMACS wiki] \
+[Stack Exchange] \
+[Reddit] \
 [Mastering Emacs]
 
 [EMACS website]: <https://www.gnu.org/software/emacs/> "Official Emacs website"
