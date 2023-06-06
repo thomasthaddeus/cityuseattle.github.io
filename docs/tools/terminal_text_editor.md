@@ -17,6 +17,10 @@ parent: Common Solutions
 
 # vi / vim
 
+[VIM Basics](./Vim_manual.md)
+
 # nano (recommend)
 
 # emacs
+
+[emacs Basics](./emacs.md)
