@@ -29,7 +29,7 @@ Jenkins is an open-source continuous integration/continuous delivery and deploym
     b. Jenkins released two types of versions. Long-term support (LTS) a which is a stable one and Regular release (Weekly). We will install the Stable one (LTS)
     c. Check the [Hardware and Software requirement](https://www.jenkins.io/doc/book/installing/linux/#prerequisites) for your Operating System before jenkins installation
 
-# 2.1 Using Docker
+# Using Docker
 
 Docker is an open-source containerization platform used for developing, shipping, and running applications in lightweight virtualized environments called containers. It is used as a software development platform for developing distributed applications to separate from the infrastructure and to deliver the software quickly. 
 Follow the requirement and detail installation [here](https://docs.docker.com/engine/install/).
@@ -63,7 +63,7 @@ type following:
     Close everything and restart Docker desktop again
 
 
-# 3. Jenkins integration with GitHub
+# Jenkins integration with GitHub
 
 <span style="color:red">**Note:-**</span> <span style="color:blue">We need Docker Hub, and GitHub account. Please create docker Hub account just like GitHub.</span>
 
