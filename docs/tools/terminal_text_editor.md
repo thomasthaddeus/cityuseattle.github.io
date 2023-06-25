@@ -1,7 +1,7 @@
 ---
 layout: default
 title: Terminal Text Editor
-parent: Common Solutions
+parent: Tools
 ---
 
 # Terminal Text Editor
