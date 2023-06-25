@@ -1,13 +1,27 @@
-# Basic **nano** Tutorial
+---
+layout: default
+title: Nano Tutorial
+parent: Tools
+---
 
-**nano** is a simple, easy-to-use text editor in Unix based systems like Linux and MacOS. This tutorial will guide you through the basic use of **nano**. Using **nano** is fairly straightforward, but there are a few key points to remember. Note that in **nano**'s documentation and prompts, the `Ctrl` and `Alt` keys are sometimes referred to as `^` and `M`, respectively.
+# Basic **nano** Tutorial
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+ 1. TOC
+{:toc}
+
+
+**`nano`** is a simple, easy-to-use text editor in Unix based systems like Linux and MacOS. This tutorial will guide you through the basic use of **`nano`**. Using **nano** is fairly straightforward, but there are a few key points to remember. Note that in **`nano`**'s documentation and prompts, the `Ctrl` and `Alt` keys are sometimes referred to as `^` and `M`, respectively.
 
 ## Opening and creating files
 
-To open or create a file, use the **nano** command followed by the name of the file:|
+To open or create a file, use the **`nano`** command followed by the name of the file:|
 
    ```bash
-   **nano** filename.txt
+   nano filename.txt
    ```
 
 ## Writing and editing text
@@ -18,11 +32,11 @@ Once you've opened a file, you can simply start typing to write or edit text.
 
 It's important to remember to save your work frequently, especially if you're making lots of changes.
 
-To save your changes, press `Ctrl+O` (writeOut). **nano** will ask you to confirm the filename. Press Enter to confirm.
+To save your changes, press `Ctrl+O` (writeOut). **`nano`** will ask you to confirm the filename. Press Enter to confirm.
 
 ### Know how to exit
 
-To exit **nano**, press `Ctrl+X` (eXit). If you want to quit **nano** and you've made changes, the program will ask you if you want to save your changes. Press `Y` for yes or `N` for no.
+To exit **`nano`**, press `Ctrl+X` (eXit). If you want to quit **`nano`** and you've made changes, the program will ask you if you want to save your changes. Press `Y` for yes or `N` for no.
 
 ## Basic navigation
 
@@ -67,15 +81,15 @@ Press `Ctrl+W` (whereIs) to search for text in your file. Type in the text you w
 
 ### GetHelp
 
-Remember, you can always press `Ctrl+G` (getHelp) to display the help text in **nano**.
+Remember, you can always press `Ctrl+G` (getHelp) to display the help text in **`nano`**.
 
 ## Advanced Features
 
-There are more advanced features and shortcuts in **nano** that can further improve your productivity.
+There are more advanced features and shortcuts in **`nano`** that can further improve your productivity.
 
 ### Undo and Redo
 
-**nano** allows for undoing and redoing actions with
+**`nano`** allows for undoing and redoing actions with
 
 - `Alt+U` (undo)
 - `Alt+E` (redo)
