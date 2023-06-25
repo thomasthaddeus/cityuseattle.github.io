@@ -25,9 +25,9 @@ parent: Common Solutions
 
 <!--- Link and Image References -->
 
-[nano_link]: {{ site.baseurl }}{% link docs/tools/nano_Basics.md %} "Link to nano user manual"
+[nano_link]: {{ site.baseurl }}{% link docs/tools/nano.md %} "Link to nano user manual"
 [emacs_link]: {{ site.baseurl }}{% link docs/tools/emacs.md %} "Link to emacs quick user manual"
-[vim_link]: {{ site.baseurl }}{% link docs/tools/Vim_manual.md %} "Link to vim quick user manual"
+[vim_link]: {{ site.baseurl }}{% link docs/tools/vim.md %} "Link to vim quick user manual"
 
 [nano_image]: https://www.saashub.com/images/app/service_logos/7/349d07650119/medium.png?1527364998 "Link to nano user manual"
 [emacs_image]: https://emojis.slackmojis.com/emojis/images/1643514267/2368/emacs.png?1643514267 "Link to emacs quick user manual"
