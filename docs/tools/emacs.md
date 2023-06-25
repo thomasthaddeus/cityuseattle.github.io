@@ -1,29 +1,23 @@
+---
+layout: default
+title: emacs User Manual
+parent: Tools
+---
+
 # Emacs User Manual
+{: .no_toc }
 
-## Table of Contents
+## Table of contents
+{: .no_toc .text-delta }
 
-- [Emacs User Manual](#emacs-user-manual)
-  - [Table of Contents](#table-of-contents)
-  - [Introduction](#introduction)
-  - [Installation](#installation)
-  - [Basic Concepts](#basic-concepts)
-  - [Basic Commands](#basic-commands)
-    - [Buffers and Windows](#buffers-and-windows)
-    - [Search and Replace](#search-and-replace)
-    - [Editing Modes](#editing-modes)
-  - [Customizing Emacs](#customizing-emacs)
-  - [Packages and Extensions](#packages-and-extensions)
-  - [Tips and Tricks](#tips-and-tricks)
-    - [Troubleshooting](#troubleshooting)
-  - [Resources](#resources)
+ 1. TOC
+{:toc}
 
 ## Introduction
 
 Emacs is a powerful and extensible text editor designed for efficient text editing.
-
-It is available for many platforms, including Windows, Linux, macOS, and more.
-
-Emacs offers numerous features and can be extended using the Emacs Lisp programming language.
+Emacs is available for many platforms, including Windows, Linux, macOS, and more.
+Emacs offers numerous text editing features and can be extended using the Emacs Lisp programming language.
 
 ## Installation
 
@@ -34,7 +28,7 @@ Depending on your operating system, follow the steps below to install Emacs:
 |**Linux (Debian-based distributions)** |  `sudo apt-get install emacs`|
 |**Linux (Red Hat-based distributions)** |  `sudo yum install emacs`|
 |**macOS (using Homebrew)** |  `brew install emacs`|
-|**Windows** | [Download the installer] |
+|**Windows** | [Download the installer][link-6] |
 
 ## Basic Concepts
 
@@ -143,17 +137,19 @@ Learn Emacs Lisp to extend and customize Emacs
 2. Consult the Emacs documentation (`Ctrl-h` + `r`) or online resources for assistance
 3. Search for or ask questions on forums, such as Stack Overflow or Emacs Reddit community
 
-## Resources
+## Additional Resources
 
-[EMACS website] \
-[EMACS wiki] \
-[Stack Exchange] \
-[Reddit] \
-[Mastering Emacs]
+1. [EMACS website][link-1]
+2. [EMACS wiki][link-2]
+3. [Stack Exchange][link-3]
+4. [Reddit][link-4]
+5. [Mastering Emacs][link-5]
 
-[EMACS website]: <https://www.gnu.org/software/emacs/> "Official Emacs website"
-[EMACS wiki]: <https://www.emacswiki.org/> "Emacs Wiki"
-[Stack Exchange]: <https://emacs.stackexchange.com/> "Emacs Stack Exchange"
-[Reddit]: <https://www.reddit.com/r/emacs/> "Emacs Reddit community"
-[Mastering Emacs]: <https://www.masteringemacs.org/> "Mastering Emacs (book)"
-[Download the installer]: <https://www.gnu.org/software/emacs/download.html> "Download the installer for Windows"
+<!-- Hyperlinks stored here -->
+
+[link-1]: <https://www.gnu.org/software/emacs/> "Official Emacs website"
+[link-2]: <https://www.emacswiki.org/> "Emacs Wiki"
+[link-3]: <https://emacs.stackexchange.com/> "Emacs Stack Exchange"
+[link-4]: <https://www.reddit.com/r/emacs/> "Emacs Reddit community"
+[link-5]: <https://www.masteringemacs.org/> "Mastering Emacs (book)"
+[link-6]: <https://www.gnu.org/software/emacs/download.html> "Download the installer for Windows"
