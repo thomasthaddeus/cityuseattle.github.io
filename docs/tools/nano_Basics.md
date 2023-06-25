@@ -1,4 +1,18 @@
+---
+layout: default
+title: Nano Tutorial
+parent: Tools
+---
+
 # Basic **nano** Tutorial
+{: .no_toc }
+
+## Table of contents
+{: .no_toc .text-delta }
+
+ 1. TOC
+{:toc}
+
 
 **`nano`** is a simple, easy-to-use text editor in Unix based systems like Linux and MacOS. This tutorial will guide you through the basic use of **`nano`**. Using **nano** is fairly straightforward, but there are a few key points to remember. Note that in **`nano`**'s documentation and prompts, the `Ctrl` and `Alt` keys are sometimes referred to as `^` and `M`, respectively.
 
